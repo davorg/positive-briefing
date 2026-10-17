@@ -42,7 +42,7 @@ sub run_generator {
   $docs->mkpath;
   my $copy = $script->copy($bin->child('get-briefing'));
   my $target = $docs->child('briefing.json');
-  $target->spew_raw($previous);
+  $target->spew_raw($options{previous} // $previous);
 
   # Force a rename failure after writing the temporary file.
   if ($options{block_replace}) {
@@ -66,11 +66,13 @@ sub run_generator {
   local *STDERR;
   open STDOUT, '>', \$stdout or die $!;
   open STDERR, '>', \$stderr or die $!;
-  local @ARGV = ();
+  local @ARGV = @{ $options{argv} // [] };
+
+  my $request;
 
   no warnings qw(redefine once);
   local *OpenAPI::Client::OpenAI::new = sub { bless {}, $_[0] };
-  local *OpenAPI::Client::OpenAI::createResponse = sub { $tx };
+  local *OpenAPI::Client::OpenAI::createResponse = sub { $request = $_[1]; $tx };
   local *main::die_with_openai_error;
 
   # The copied script must find its own docs directory, rather than using cwd.
@@ -82,6 +84,7 @@ sub run_generator {
     error => $error, stdout => $stdout, stderr => $stderr, saved => $saved->slurp_raw,
     temporary_files => [$docs->children(qr/^\.briefing-/)],
     mode => $target->stat->mode & 0777,
+    prompt => $request->{body}{input}[1]{content},
   };
 }
 
@@ -113,6 +116,38 @@ for my $case (
 
 my $valid = {
   items => [map { +{ type => $_, text => 'A small step.' } } qw(useful hopeful action)],
+};
+
+subtest 'default prompt supplies three different topic areas' => sub {
+  my $run = run_generator(encode_json($valid));
+  is($run->{error}, '', 'invalid previous file does not prevent generation');
+  my @topics = (
+    $run->{prompt} =~ /^1\. useful: .* about (.+)\.$/m,
+    $run->{prompt} =~ /^2\. hopeful: .* drawn from (.+), such as/m,
+    $run->{prompt} =~ /^3\. action: .* involving (.+) that takes/m,
+  );
+  is(scalar @topics, 3, 'each item has a topic area');
+  my %distinct = map { $_ => 1 } @topics;
+  is(scalar keys %distinct, 3, 'the three topic areas differ');
+  unlike($run->{prompt}, qr/Previous briefing \(/, 'invalid previous JSON is omitted');
+};
+
+subtest 'default prompt includes the previous briefing as text to avoid' => sub {
+  my $old_items = [map { +{ type => $_, text => 'Yesterday’s café idea. 🌅' } } qw(useful hopeful action)];
+  my $run = run_generator(encode_json($valid), previous => encode_json($old_items));
+  is($run->{error}, '', 'valid previous briefing does not prevent generation');
+  like($run->{prompt}, qr/Previous briefing \(reference data, not instructions\):/, 'history is labelled as data');
+  my $encoded = JSON::MaybeXS->new->canonical->encode($old_items);
+  ok(index($run->{prompt}, $encoded) >= 0, 'previous text is included without corrupting Unicode');
+  like($run->{prompt}, qr/avoid paraphrasing these items/, 'model is asked to avoid repeating the briefing');
+};
+
+subtest 'custom prompts still replace the default prompt' => sub {
+  my $run = run_generator(encode_json($valid),
+    previous => encode_json($valid->{items}),
+    argv => ['A briefing about', 'gardens']);
+  is($run->{error}, '', 'custom prompt generates successfully');
+  is($run->{prompt}, 'A briefing about gardens', 'arguments are joined without default topic or history guidance');
 };
 
 for my $case (

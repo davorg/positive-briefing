@@ -49,11 +49,22 @@ export OPENAI_API_KEY='your-api-key'
 ./bin/get-briefing
 ```
 
-With no arguments, its prompt is:
+With no arguments, it builds a fresh prompt with three different topic areas
+selected at random from twelve areas, including science, language, nature,
+repair, cooking, art, community, history, and everyday practical skills. It asks
+for a useful fact or technique, a concrete reason for optimism, and an action
+that takes under five minutes without buying anything.
 
-> Give me a 3-bullet sunrise briefing: something useful, something hopeful, one tiny action I can do today.
+The prompt requests short, specific items in British English, varied sentence
+openings, and no generic motivational filler or repeated wellness advice. When
+`docs/briefing.json` contains a valid briefing, that text is included as reference
+material with instructions to choose different subjects, facts, and activities.
+Missing or invalid previous content is ignored. Only the last saved briefing is
+used, so this encourages variety without keeping a longer history or guaranteeing
+unique content every day.
 
-Arguments replace that prompt. They are joined with spaces:
+Arguments replace the entire default prompt, including its random topics and
+previous-briefing context. They are joined with spaces:
 
 ```sh
 ./bin/get-briefing 'Give me a briefing for a rainy day: something useful, something hopeful, and one tiny action.'
@@ -73,7 +84,8 @@ generator's environment; the static site does not need it.
 ## How it works
 
 ```text
-Default or custom prompt + OPENAI_API_KEY
+Default prompt + previous briefing, or custom prompt
+                  + OPENAI_API_KEY
                   |
                   v
           bin/get-briefing --> OpenAI Responses API
@@ -89,7 +101,8 @@ Default or custom prompt + OPENAI_API_KEY
 
 The generator calls `createResponse` with the hardcoded model `gpt-6-luna`,
 reasoning effort `none`, and temperature `0.7`. These settings and the default
-prompt live in `bin/get-briefing`; there are no command-line flags for them.
+prompt-building rules live in `bin/get-briefing`; there are no command-line flags
+for the model settings.
 
 It requests strict structured output with an object shaped as
 `{"items": [...]}`. It concatenates the response's `output_text` blocks, decodes
@@ -176,6 +189,7 @@ valid UTF-8 JSON.
 They also check that invalid responses and failed file replacements preserve
 existing content and clean up temporary files. Each run uses an isolated copy
 of the generator and a temporary `docs/` directory.
-They require the Perl dependencies above and do not need an API key.
+Prompt tests also cover topic selection, previous-briefing context, and custom
+prompt overrides. They require the Perl dependencies above and do not need an API key.
 Previewing the page also checks that the static files can be served together.
 There is no CI configuration in the repository.

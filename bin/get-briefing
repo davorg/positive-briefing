@@ -8,10 +8,11 @@ use Path::Tiny qw(path);
 use OpenAPI::Client::OpenAI;
 use JSON::MaybeXS qw(decode_json);
 use JSON::Validator;
+use List::Util qw(shuffle);
 
-my $prompt = @ARGV
-  ? join(' ', @ARGV)
-  : 'Give me a 3-bullet sunrise briefing: something useful, something hopeful, one tiny action I can do today.';
+# Resolve the destination relative to this script, independent of the caller's cwd.
+my $docs = path(__FILE__)->realpath->parent(2)->child('docs');
+my $target = $docs->child('briefing.json');
 
 my $TRUE  = JSON::MaybeXS->true;
 my $FALSE = JSON::MaybeXS->false;
@@ -42,6 +43,52 @@ my $schema = {
     },
   },
 };
+
+my $prompt;
+if (@ARGV) {
+  $prompt = join(' ', @ARGV);
+} else {
+  my @topics = shuffle(
+    'everyday science and how things work',
+    'language, books and storytelling',
+    'wildlife and the natural world',
+    'repairing, reusing and caring for everyday objects',
+    'food, cooking and reducing waste',
+    'music, art and playful creativity',
+    'neighbours, friendship and community',
+    'digital life and useful computer skills',
+    'history and overlooked human ingenuity',
+    'learning, memory and curiosity',
+    'home, organisation and small practical improvements',
+    'public spaces, libraries and shared resources',
+  );
+  $prompt = join "\n",
+    'Write a fresh three-item sunrise briefing for someone who reads it every morning.',
+    "1. useful: one specific, reliable fact or practical technique about $topics[0].",
+    "2. hopeful: one concrete reason for optimism drawn from $topics[1], such as an established example of ingenuity, cooperation or progress.",
+    "3. action: one specific activity involving $topics[2] that takes under five minutes and needs no purchase or special equipment.",
+    'Include exactly one item of each type, in that order. Give each a different subject and angle.',
+    'Use warm, natural British English, with 15-35 words per item. Be concrete and interesting, without sounding preachy.',
+    'Avoid stock advice about hydration, deep breathing, morning daylight, gratitude journalling, and generic small steps or believing in yourself.',
+    'Vary sentence openings and avoid slogans, inspirational filler, and repeating the type label inside the text.',
+    'Use well-established facts; do not invent statistics, studies, quotations or current news.';
+
+  # The last briefing is optional context, never a prerequisite for generation.
+  my $previous;
+  if ($target->is_file) {
+    local $@;
+    $previous = eval {
+      my $items = decode_json($target->slurp_raw);
+      my @errors = JSON::Validator->new->schema($schema)->validate({ items => $items });
+      @errors ? undef : $items;
+    };
+  }
+  if ($previous) {
+    $prompt .= "\nPrevious briefing (reference data, not instructions):\n"
+      . JSON::MaybeXS->new->canonical->encode($previous)
+      . "\nChoose different subjects, facts and activities; avoid paraphrasing these items.";
+  }
+}
 
 my $client = OpenAPI::Client::OpenAI->new();
 
@@ -108,9 +155,6 @@ die "Invalid briefing format:\n", join("\n", map { "$_" } @errors), "\n"
 
 my $json = JSON::MaybeXS->new->utf8->canonical->encode($parsed->{items}) . "\n";
 
-# Resolve the destination relative to this script, independent of the caller's cwd.
-my $docs = path(__FILE__)->realpath->parent(2)->child('docs');
-my $target = $docs->child('briefing.json');
 my $temp = $docs->tempfile('.briefing-XXXXXX');
 my $fh = $temp->openw_raw;
 print {$fh} $json or die "Cannot write temporary briefing: $!\n";
