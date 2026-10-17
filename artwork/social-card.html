@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <title>Positivity Briefing social card artwork</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+      body { color: #f5f0e5; font-family: "DM Sans", sans-serif; background: #25352f url("../docs/images/backgrounds/rolling-hills.jpg") center / cover; }
+      body::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(12 25 23 / 90%), rgb(12 25 23 / 48%) 55%, rgb(12 25 23 / 20%)); }
+      main { position: relative; height: 100%; padding: 44px 62px 34px; }
+      header, footer { display: flex; justify-content: space-between; align-items: center; font-family: "DM Mono", monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+      header { padding-bottom: 22px; border-bottom: 1px solid #f5f0e555; color: #f1c48f; }
+      h1 { margin: 35px 0 22px -4px; font: 116px/.87 "Instrument Serif", Georgia, serif; letter-spacing: -3px; font-weight: 400; }
+      h1 em { color: #f1c48f; }
+      p { margin: 0; font-size: 22px; line-height: 1.6; }
+      footer { position: absolute; bottom: 34px; left: 62px; right: 62px; border-top: 1px solid #f5f0e555; padding-top: 19px; font-size: 11px; }
+      .sun { position: absolute; right: 85px; top: 190px; width: 250px; height: 180px; color: #f1c48f; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header><span>A brighter start, every morning</span><span>Useful · Hopeful · Actionable</span></header>
+      <h1>Positivity<br /><em>Briefing.</em></h1>
+      <p>Something useful. Something hopeful.<br />One small thing you can do today.</p>
+      <svg class="sun" viewBox="0 0 100 72" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <path d="M8 54h84M25 54a25 25 0 0 1 50 0M50 3v12M14 18l9 9M86 18l-9 9M27 66h46" />
+      </svg>
+      <footer><span>positivitybriefing.com</span><span>Made by Dave Cross</span></footer>
+    </main>
+  </body>
+</html>

@@ -98,6 +98,34 @@ Entry IDs depend on item position, type, and text, so unchanged items retain
 their identity across regenerations. The feed retains the current briefing
 only; it does not accumulate an archive.
 
+## Search, sharing, and analytics
+
+`docs/index.html` contains the page title, description, canonical URL, Open
+Graph tags, and Twitter large-image card metadata. These are present in the
+static HTML, so sharing services can read them without executing JavaScript.
+JSON-LD describes the website, home page, author, and preview image using the
+production URL `https://positivitybriefing.com/`.
+
+`docs/robots.txt` allows crawling and points to `docs/sitemap.xml`, which lists
+the canonical home page. Both should be published at the domain root alongside
+the site. The page also includes a sunrise favicon and Apple touch icon.
+
+The 1200 × 630 social preview is `docs/images/social-card.png`. Its editable
+HTML/CSS source is `artwork/social-card.html`, which uses the bundled rolling
+hills photograph and the site's Google Fonts. To update the PNG, serve the
+repository root, open `/artwork/social-card.html` in a browser at exactly
+1200 × 630 CSS pixels with a device scale factor of 1, wait for fonts and images
+to load, and capture the viewport. The artwork source is not part of `docs/`
+and does not need to be deployed.
+
+`docs/analytics.js` configures GA4 measurement ID `G-L866B8F7YN` using
+[Google's gtag.js setup](https://developers.google.com/tag-platform/gtagjs).
+The loader runs only on `positivitybriefing.com` and
+`www.positivitybriefing.com`; local previews and other hostnames do not load
+Google Analytics or send page views. The Google tag loads asynchronously.
+After deployment, its delivery to the GA4 property can be checked with Google's
+Tag Assistant or the property's Realtime report.
+
 ## How it works
 
 ```text
@@ -176,10 +204,15 @@ array's order and does not validate individual fields before rendering.
 | `lib/PositivityBriefing/Feed.pm` | Builds the Atom feed using `XML::Feed`. |
 | `docs/index.html` | Page structure, loading message, and footer. |
 | `docs/app.js` | JSON fetching, rendering, error display, and background loading. |
+| `docs/analytics.js` | GA4 configuration, enabled only on the production hostnames. |
 | `docs/style.css` | Responsive editorial layout, typography, and background styling. |
 | `docs/images/backgrounds/` | Bundled daily background photos and their credits. |
 | `docs/briefing.json` | Saved briefing served to every visitor. |
 | `docs/feed.atom` | Atom feed containing the latest three briefing items. |
+| `docs/images/social-card.png` | Branded image used by Open Graph and Twitter cards. |
+| `docs/favicon.svg`, `docs/apple-touch-icon.png` | Site and home-screen icons. |
+| `docs/robots.txt`, `docs/sitemap.xml` | Crawler instructions and canonical home-page sitemap. |
+| `artwork/social-card.html` | Editable source for the exported social preview image. |
 
 Despite its name, `docs/` is the website's public directory.
 

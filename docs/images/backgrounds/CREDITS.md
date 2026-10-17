@@ -21,3 +21,7 @@ Downloaded as 1920 × 1080 JPEGs from the following Unsplash image URLs, with
 The sunset is also the CSS fallback, so it appears while the daily photo loads
 and when JavaScript is unavailable. Update the list in `docs/app.js` and this
 file together when adding or replacing photos.
+
+The rolling hills photograph is also used as the background of the social
+preview image at `docs/images/social-card.png`, whose layout source is
+`artwork/social-card.html`.
