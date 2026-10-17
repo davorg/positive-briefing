@@ -1,0 +1,80 @@
+name: Regenerate briefing
+
+on:
+  schedule:
+    # A few minutes past midnight UTC, away from the busiest scheduling minute.
+    - cron: '7 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: regenerate-briefing
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    # Manual runs must target main; forks should not generate or publish content.
+    if: github.repository == 'davorg/positive-briefing' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Check API key is configured
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo '::error::Add OPENAI_API_KEY as a repository Actions secret.'
+            exit 1
+          fi
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends libxml2-dev
+
+      - name: Set up Perl and cache CPAN dependencies
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: '5.42'
+          install-modules-with: cpanm
+
+      - name: Run checks
+        run: |
+          perl -c bin/get-briefing
+          prove -v t
+
+      - name: Generate and validate briefing and Atom feed
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: ./bin/get-briefing > /dev/null
+
+      - name: Commit and push updated briefing
+        id: update
+        run: |
+          git add docs/briefing.json docs/feed.atom
+          if git diff --cached --quiet; then
+            echo 'No briefing changes to publish.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Refresh daily briefing for $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+
+      - name: Request GitHub Pages rebuild
+        if: steps.update.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # GITHUB_TOKEN pushes do not trigger the branch-based Pages build.
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

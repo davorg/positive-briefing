@@ -37,8 +37,8 @@ From the repository root, install the runtime and test dependencies with `cpanm`
 cpanm --installdeps .
 ```
 
-Dependencies are declared in `cpanfile`; there is no lockfile. The same install
-command can be used in a GitHub Actions job before running `prove -v t`.
+Dependencies are declared in `cpanfile`; there is no lockfile. The daily GitHub
+Actions workflow installs these dependencies before running `prove -v t`.
 The OpenAI client must provide the `createResponse` method.
 
 Set the API key in your shell, then run the generator:
@@ -200,6 +200,7 @@ array's order and does not validate individual fields before rendering.
 | File | Purpose |
 | --- | --- |
 | `cpanfile` | Perl version requirement and runtime/test dependencies. |
+| `.github/workflows/regenerate-briefing.yml` | Scheduled generation, checks, commits, and Pages rebuilds. |
 | `bin/get-briefing` | Perl CLI that requests, validates, saves, and prints a new briefing. |
 | `lib/PositivityBriefing/Feed.pm` | Builds the Atom feed using `XML::Feed`. |
 | `docs/index.html` | Page structure, loading message, and footer. |
@@ -220,13 +221,40 @@ Despite its name, `docs/` is the website's public directory.
 
 Publish the contents of `docs/` to a static web host, preserving the relative
 paths between the HTML, JavaScript, CSS, and JSON files. The host does not need
-Perl or an API key. The repository does not include deployment configuration.
+Perl or an API key. Production uses GitHub Pages with the publishing source set
+to the `main` branch's `/docs` directory and the custom domain in `docs/CNAME`.
 
-The page says “Updated daily”, but the repository contains no scheduler or
-automation to make that happen. To provide daily briefings, an external job
-must run the generator and publish the updated `briefing.json` and `feed.atom`
-after a successful run. Configure credentials in that job's environment.
-Generating the files locally does not update a hosted copy.
+[Regenerate briefing](.github/workflows/regenerate-briefing.yml) runs every day
+at **00:07 UTC** (`7 0 * * *`). [GitHub may delay scheduled runs](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule),
+so this is an approximate start time. The workflow must be on the default
+branch for its schedule to run.
+
+Before enabling it, add an Actions repository secret named `OPENAI_API_KEY`
+under **Settings → Secrets and variables → Actions**. You can also set it with
+`gh secret set OPENAI_API_KEY`, which prompts for the value. The secret is only
+passed to the configuration check and generator; it is never put in `docs/`.
+No personal access token is required: the workflow grants its built-in
+`GITHUB_TOKEN` permission to write repository contents and request Pages builds.
+
+Each run installs Perl 5.42, system XML libraries, and the runtime/test modules
+from `cpanfile`, caching CPAN dependencies between runs. It checks the Perl
+syntax and runs the regression tests before making an API request. The
+generator validates the response before replacing `docs/briefing.json` and
+`docs/feed.atom`; only those two files are committed and pushed to `main`.
+Failed checks or generation stop before the commit and leave the published
+briefing in place. Concurrent workflow runs are serialised, and a conflicting
+update on `main` stops publication rather than overwriting it.
+
+After pushing, the workflow explicitly requests a GitHub Pages rebuild because
+[pushes made with `GITHUB_TOKEN` do not trigger a branch-based Pages build](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+Keep Pages configured to deploy from `main` and `/docs` for this workflow.
+To regenerate immediately or retry a failed run, open **Actions → Regenerate
+briefing → Run workflow** and select `main`. Runs on other branches or forks
+are skipped. Each successful run makes one generation request and may incur
+OpenAI API usage charges.
+
+Generating the files locally does not update the hosted copy; commit and push
+both files to publish a local generation.
 
 The feed includes generation timestamps, but there is no archive or page
 freshness check. All visitors see the same saved briefing until it is replaced.
@@ -256,4 +284,5 @@ They require the Perl dependencies above and do not need an API key.
 Feed tests also check Atom metadata, stable IDs, links, Unicode, XML escaping,
 and preservation of existing outputs when feed generation fails.
 Previewing the page also checks that the static files can be served together.
-There is no CI configuration in the repository.
+The daily/manual workflow runs the Perl checks before generation; it is not
+triggered by ordinary pushes or pull requests.
