@@ -1,0 +1,134 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use utf8;
+use feature 'signatures';
+
+use OpenAPI::Client::OpenAI;
+use JSON::MaybeXS qw(decode_json);
+
+my $prompt = @ARGV
+  ? join(' ', @ARGV)
+  : 'Give me a 3-bullet sunrise briefing: something useful, something hopeful, one tiny action I can do today.';
+
+my $TRUE  = JSON::MaybeXS->true;
+my $FALSE = JSON::MaybeXS->false;
+
+# Structured Outputs requires the *root* of the schema to be an object.
+# So we wrap your desired array under { items: [...] } and later print only items.
+my $schema = {
+  type                 => 'object',
+  additionalProperties => $FALSE,
+  required             => ['items'],
+  properties           => {
+    items => {
+      type     => 'array',
+      minItems => 3,
+      maxItems => 3,
+      items    => {
+        type                 => 'object',
+        additionalProperties => $FALSE,
+        required             => [ 'type', 'text' ],
+        properties           => {
+          type => {
+            type => 'string',
+            enum => [ 'useful', 'hopeful', 'action' ],
+          },
+          text => { type => 'string' },
+        },
+      },
+    },
+  },
+};
+
+my $client = OpenAPI::Client::OpenAI->new();
+
+my $tx = $client->createResponse({
+  body => {
+    model => 'gpt-6-luna',
+    reasoning => { effort => 'none' },
+
+    input => [
+      {
+        role    => 'system',
+        content => join "\n",
+          "Return STRICT JSON matching the provided schema.",
+          "Output must be an object with one key: items.",
+          "items must be an array of exactly 3 objects.",
+          "Each object must have exactly keys: type and text.",
+          "type must be one of: useful, hopeful, action.",
+      },
+      { role => 'user', content => $prompt },
+    ],
+
+    text => {
+      format => {
+        type   => 'json_schema',
+        name   => 'sunrise_briefing',
+        strict => $TRUE,
+        schema => $schema,
+      },
+    },
+
+    temperature => 0.7,
+  },
+});
+
+die "Request failed (no response)\n" unless $tx && $tx->res;
+if (my $err = $tx->error) {
+  die_with_openai_error($tx);
+}
+
+my $res = $tx->res->json;
+
+# Extract concatenated output_text blocks
+my $raw = '';
+if (ref($res->{output}) eq 'ARRAY') {
+  for my $out (@{ $res->{output} }) {
+    next unless ref($out) eq 'HASH';
+    next unless ref($out->{content}) eq 'ARRAY';
+    for my $c (@{ $out->{content} }) {
+      next unless ref($c) eq 'HASH';
+      if (($c->{type} // '') eq 'output_text' && defined $c->{text}) {
+        $raw .= $c->{text};
+      }
+    }
+  }
+}
+
+die "Could not find output_text in response\n" if $raw !~ /\S/;
+
+my $parsed = decode_json($raw);
+die "Schema mismatch: missing items\n"
+  unless ref($parsed) eq 'HASH' && ref($parsed->{items}) eq 'ARRAY';
+
+# Print EXACTLY what you asked for: a JSON array of 3 {type,text} objects
+print JSON::MaybeXS->new->utf8->canonical->encode($parsed->{items}), "\n";
+
+use JSON::MaybeXS qw(encode_json decode_json);
+
+sub die_with_openai_error ($tx) {
+  my $err = $tx->error;
+
+  if (ref $err) {
+    warn "API error (object):\n", JSON::MaybeXS->new->utf8->pretty->encode($err), "\n";
+  } else {
+    warn "API error: $err\n";
+  }
+
+  if ($tx->res) {
+    warn "HTTP status: ", ($tx->res->code // '(unknown)'), "\n";
+
+    my $body = $tx->res->body // '';
+    if ($body =~ /\S/) {
+      warn "Raw body:\n$body\n";
+      eval {
+        my $j = decode_json($body);
+        warn "Body as JSON:\n", JSON::MaybeXS->new->utf8->pretty->encode($j), "\n";
+        1;
+      } or warn "(Body was not JSON)\n";
+    }
+  }
+
+  die "OpenAI request failed\n";
+}
