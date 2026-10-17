@@ -3,29 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Positive Briefing</title>
+    <meta name="theme-color" content="#f5f0e5" />
+    <title>Positivity Briefing</title>
+    <link rel="canonical" href="https://positivitybriefing.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <main class="card">
-      <header class="header">
-        <h1>Positive Briefing</h1>
-        <p class="strapline">A tiny sunrise reset: useful, hopeful, actionable.</p>
+    <div class="page">
+      <header class="masthead">
+        <span class="masthead-note">
+          <svg class="sun-mark" viewBox="0 0 40 28" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M2 24h36M10 24a10 10 0 0 1 20 0M20 2v6M4 9l5 5M36 9l-5 5" />
+          </svg>
+          A little light for your day.
+        </span>
+        <span id="edition-date" class="edition-date">The morning edition</span>
       </header>
 
-      <section id="content" class="content" aria-live="polite">
-        <p class="loading">Fetching today’s briefing…</p>
-      </section>
+      <main class="layout">
+        <div class="hero">
+          <p class="eyebrow">A brighter start</p>
+          <h1>Positivity<br /><em>Briefing.</em></h1>
+          <p class="strapline">Something useful. Something hopeful.<br />One small thing you can do today.</p>
+
+          <svg class="sun-stamp" viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+              <path id="stamp-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" />
+            </defs>
+            <text><textPath href="#stamp-circle" textLength="288">PAUSE A LITTLE · SEE A LITTLE MORE · </textPath></text>
+            <g fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M36 72h48M43 66a17 17 0 0 1 34 0M60 31v9M35 40l7 7M85 40l-7 7" />
+              <path d="M44 80h32" />
+            </g>
+          </svg>
+        </div>
+
+        <section class="briefing" aria-label="Today’s briefing">
+          <div class="edition-bar"><span>The morning edition</span><span>03 good things</span></div>
+          <div id="content" class="content" aria-live="polite" aria-busy="true">
+            <p class="loading">A little perspective is on its way…</p>
+          </div>
+          <p class="paper-note">Take what you need. Carry it with you.</p>
+        </section>
+      </main>
 
       <footer class="footer">
-        <span id="meta"></span>
-        <span class="sep">•</span>
-        <span>Background photo from Unsplash</span>
-        <span class="sep">•</span>
-        <span>Briefing generated daily</span>
+        <span class="update-status">
+          <span class="status-dot" aria-hidden="true"></span><span id="meta">Updated daily</span>
+        </span>
+        <div class="footer-links">
+          <a id="background-credit" href="https://unsplash.com/photos/4wEka_nkQZ0">Photo by Anna Khmel on Unsplash</a>
+          <span>Made by <a href="https://davecross.co.uk/">Dave Cross</a></span>
+        </div>
       </footer>
-    </main>
+    </div>
 
     <script src="app.js"></script>
   </body>

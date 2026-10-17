@@ -1,4 +1,4 @@
-# Positive Briefing
+# Positivity Briefing
 
 A small web page that displays a three-part “sunrise briefing”: something useful,
 something hopeful, and one small action to take today. A Perl command generates
@@ -117,10 +117,19 @@ DOM text nodes. Failed requests, invalid JSON, or rendering errors show
 “Couldn’t load today’s briefing. Try refreshing.” The page fetches once per load;
 there is no polling.
 
-The browser also attempts to preload a sunrise image from
-`https://source.unsplash.com/1920x1080/?sunrise&sig=YYYYMMDD`, using the current
-UTC date. A successful load sets the background image. A failed load logs a
-console warning and leaves the dark CSS background in place.
+The background rotates through four bundled landscape and sunset photos, with
+the selection changing each UTC day on page load. Images are served from
+`docs/images/backgrounds/`, with no external image request or API key needed.
+The daily image is preloaded before switching the background and its linked
+photographer credit. A bundled ocean sunset is the CSS fallback while loading,
+if the selected photo fails, or if JavaScript is unavailable. Photo sources and
+licensing are recorded in `docs/images/backgrounds/CREDITS.md`.
+
+The page pairs Instrument Serif headlines with DM Sans body text and DM Mono
+labels, loaded from Google Fonts with local serif, sans-serif, and monospace
+fallbacks. Its layout places the title alongside a paper-style briefing panel
+on larger screens and stacks them on mobile. Decorative SVGs are hidden from
+screen readers, and entrance animations respect reduced-motion preferences.
 
 ## Briefing format
 
@@ -149,7 +158,8 @@ array's order and does not validate individual fields before rendering.
 | `bin/get-briefing` | Perl CLI that requests, validates, saves, and prints a new briefing. |
 | `docs/index.html` | Page structure, loading message, and footer. |
 | `docs/app.js` | JSON fetching, rendering, error display, and background loading. |
-| `docs/style.css` | Responsive card layout and background styling. |
+| `docs/style.css` | Responsive editorial layout, typography, and background styling. |
+| `docs/images/backgrounds/` | Bundled daily background photos and their credits. |
 | `docs/briefing.json` | Saved briefing served to every visitor. |
 
 Despite its name, `docs/` is the website's public directory.
@@ -160,8 +170,7 @@ Publish the contents of `docs/` to a static web host, preserving the relative
 paths between the HTML, JavaScript, CSS, and JSON files. The host does not need
 Perl or an API key. The repository does not include deployment configuration.
 
-The page says “Updated daily” and “Briefing generated daily”, but the repository
-contains no scheduler or automation to make that happen. To provide daily
+The page says “Updated daily”, but the repository contains no scheduler or automation to make that happen. To provide daily
 briefings, an external job must run the generator and publish the updated
 `briefing.json` after a successful run. Configure credentials in that job's
 environment. Generating the JSON locally does not update a hosted copy.
