@@ -27,20 +27,20 @@ Python is only used here as a convenient local static server.
 
 You need:
 
-- Perl with support for subroutine signatures (Perl 5.36 or newer recommended).
-- The CPAN modules `OpenAPI::Client::OpenAI` and `JSON::MaybeXS`.
+- Perl 5.36 or newer.
+- The CPAN modules `OpenAPI::Client::OpenAI`, `JSON::MaybeXS`, `JSON::Validator`,
+  and `Path::Tiny`.
 - An OpenAI API key and network access to the API.
 
-If you use `cpanm`, install the modules with:
+From the repository root, install the runtime and test dependencies with `cpanm`:
 
 ```sh
-cpanm OpenAPI::Client::OpenAI JSON::MaybeXS
+cpanm --installdeps .
 ```
 
-There is no dependency manifest or lockfile. The local environment inspected
-while documenting this project had Perl 5.42.3, `OpenAPI::Client::OpenAI` 0.25,
-and `JSON::MaybeXS` 1.004008; these are observed versions, not pinned requirements.
-The client must provide the `createResponse` method.
+Dependencies are declared in `cpanfile`; there is no lockfile. The same install
+command can be used in a GitHub Actions job before running `prove -v t`.
+The OpenAI client must provide the `createResponse` method.
 
 Set the API key in your shell, then run the generator:
 
@@ -59,18 +59,16 @@ Arguments replace that prompt. They are joined with spaces:
 ./bin/get-briefing 'Give me a briefing for a rainy day: something useful, something hopeful, and one tiny action.'
 ```
 
-The command prints a compact UTF-8 JSON array to standard output. It does not
-update the site itself. To replace the site's briefing only after the command
-succeeds, run from the repository root:
+The command validates the response against the full JSON schema, then overwrites
+`docs/briefing.json` with a compact UTF-8 JSON array. The destination is relative
+to the script's location, so you can invoke it from any working directory.
+It writes and closes a temporary file in `docs/` before atomically replacing
+the existing briefing. API, parsing, validation, or file-writing failures leave
+the previous briefing intact; temporary files are cleaned up.
 
-```sh
-./bin/get-briefing > docs/briefing.json.new &&
-  mv docs/briefing.json.new docs/briefing.json
-```
-
-A failed run leaves the existing `briefing.json` intact and may leave a `.new`
-file. Keep the API key in the generator's environment; the static site does not
-need it.
+After a successful update, the same JSON is also printed to standard output.
+No shell redirection is needed to update the site. Keep the API key in the
+generator's environment; the static site does not need it.
 
 ## How it works
 
@@ -81,12 +79,12 @@ Default or custom prompt + OPENAI_API_KEY
           bin/get-briefing --> OpenAI Responses API
                   |
                   v
-            JSON on stdout
-                  |
-          save/publish separately
+      validate, then replace file
                   |
                   v
          docs/briefing.json <-- docs/app.js <-- browser
+                  |
+          JSON also on stdout
 ```
 
 The generator calls `createResponse` with the hardcoded model `gpt-6-luna`,
@@ -95,10 +93,10 @@ prompt live in `bin/get-briefing`; there are no command-line flags for them.
 
 It requests strict structured output with an object shaped as
 `{"items": [...]}`. It concatenates the response's `output_text` blocks, decodes
-the JSON, checks that `items` is an array, and prints that array without the
-outer object. API failures produce diagnostics on standard error and terminate
-the command. Missing output text or a missing `items` array also terminate it;
-there is no retry loop.
+the JSON as Perl text, and validates it locally against the same schema sent to
+the API. Only a valid response is saved, without the outer object. API failures
+produce diagnostics on standard error and terminate the command. Missing output
+text or invalid JSON/schema also terminate it; there is no retry loop.
 
 On page load, `app.js` fetches `briefing.json` with `cache: "no-store"`, checks
 that it is an array of three items, then renders each item's type and text using
@@ -125,6 +123,7 @@ The file consumed by the page is an array, for example:
 
 The API schema requires exactly three objects, each with only `type` and `text`.
 `type` must be `useful`, `hopeful`, or `action`, and `text` must be a string.
+The generator checks these requirements before replacing the saved file.
 The schema permits repeated types and does not enforce their order; the default
 prompt supplies the intent to include one of each. The browser preserves the
 array's order and does not validate individual fields before rendering.
@@ -133,7 +132,8 @@ array's order and does not validate individual fields before rendering.
 
 | File | Purpose |
 | --- | --- |
-| `bin/get-briefing` | Perl CLI that requests and prints a new briefing. |
+| `cpanfile` | Perl version requirement and runtime/test dependencies. |
+| `bin/get-briefing` | Perl CLI that requests, validates, saves, and prints a new briefing. |
 | `docs/index.html` | Page structure, loading message, and footer. |
 | `docs/app.js` | JSON fetching, rendering, error display, and background loading. |
 | `docs/style.css` | Responsive card layout and background styling. |
@@ -149,8 +149,8 @@ Perl or an API key. The repository does not include deployment configuration.
 
 The page says “Updated daily” and “Briefing generated daily”, but the repository
 contains no scheduler or automation to make that happen. To provide daily
-briefings, an external job must run the generator, replace `briefing.json` on
-success, and publish the updated file. Configure credentials in that job's
+briefings, an external job must run the generator and publish the updated
+`briefing.json` after a successful run. Configure credentials in that job's
 environment. Generating the JSON locally does not update a hosted copy.
 
 There is no generation timestamp, archive, or freshness check. All visitors see
@@ -165,9 +165,17 @@ These checks do not make an API request:
 perl -c bin/get-briefing
 node --check docs/app.js
 python3 -m json.tool docs/briefing.json
+prove -v t
 ```
 
 The Perl check requires the CPAN dependencies to be installed. The JSON check
-validates JSON syntax, not the full briefing format. Previewing the page also
-checks that the static files can be served together. There is no automated test
-suite or CI configuration in the repository.
+validates JSON syntax, not the full briefing format. The regression tests in
+`t/` run the generator with small Perl test doubles for the API response and
+check that ASCII, accented characters, curly punctuation, and emoji survive as
+valid UTF-8 JSON.
+They also check that invalid responses and failed file replacements preserve
+existing content and clean up temporary files. Each run uses an isolated copy
+of the generator and a temporary `docs/` directory.
+They require the Perl dependencies above and do not need an API key.
+Previewing the page also checks that the static files can be served together.
+There is no CI configuration in the repository.

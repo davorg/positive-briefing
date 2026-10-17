@@ -4,8 +4,10 @@ use warnings;
 use utf8;
 use feature 'signatures';
 
+use Path::Tiny qw(path);
 use OpenAPI::Client::OpenAI;
 use JSON::MaybeXS qw(decode_json);
+use JSON::Validator;
 
 my $prompt = @ARGV
   ? join(' ', @ARGV)
@@ -75,7 +77,7 @@ my $tx = $client->createResponse({
 });
 
 die "Request failed (no response)\n" unless $tx && $tx->res;
-if (my $err = $tx->error) {
+if ($tx->error || !$tx->res->is_success) {
   die_with_openai_error($tx);
 }
 
@@ -98,17 +100,30 @@ if (ref($res->{output}) eq 'ARRAY') {
 
 die "Could not find output_text in response\n" if $raw !~ /\S/;
 
-my $parsed = decode_json($raw);
-die "Schema mismatch: missing items\n"
-  unless ref($parsed) eq 'HASH' && ref($parsed->{items}) eq 'ARRAY';
+# The outer response decoder has already converted output_text to Perl text.
+my $parsed = JSON::MaybeXS->new->utf8(0)->decode($raw);
+my @errors = JSON::Validator->new->schema($schema)->validate($parsed);
+die "Invalid briefing format:\n", join("\n", map { "$_" } @errors), "\n"
+  if @errors;
 
-# Print EXACTLY what you asked for: a JSON array of 3 {type,text} objects
-print JSON::MaybeXS->new->utf8->canonical->encode($parsed->{items}), "\n";
+my $json = JSON::MaybeXS->new->utf8->canonical->encode($parsed->{items}) . "\n";
 
-use JSON::MaybeXS qw(encode_json decode_json);
+# Resolve the destination relative to this script, independent of the caller's cwd.
+my $docs = path(__FILE__)->realpath->parent(2)->child('docs');
+my $target = $docs->child('briefing.json');
+my $temp = $docs->tempfile('.briefing-XXXXXX');
+my $fh = $temp->openw_raw;
+print {$fh} $json or die "Cannot write temporary briefing: $!\n";
+close $fh or die "Cannot close temporary briefing: $!\n";
+$temp->chmod(0644);
+# Use rename directly: move can fall back to copying or move into a directory.
+rename $temp, $target or die "Cannot replace $target: $!\n";
+
+# Keep stdout useful for callers as well as updating the site.
+print $json;
 
 sub die_with_openai_error ($tx) {
-  my $err = $tx->error;
+  my $err = $tx->error // $tx->res->message // 'HTTP request failed';
 
   if (ref $err) {
     warn "API error (object):\n", JSON::MaybeXS->new->utf8->pretty->encode($err), "\n";
