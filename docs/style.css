@@ -290,6 +290,25 @@ h1 em {
   gap: 9px;
 }
 
+.feed-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: var(--sunlight);
+  border: 1px solid transparent;
+}
+
+.feed-link:hover {
+  border-color: currentColor;
+}
+
+.feed-link svg {
+  width: 16px;
+  height: 16px;
+}
+
 .status-dot {
   width: 5px;
   height: 5px;

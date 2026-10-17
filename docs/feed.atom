@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+  <id>https://positivitybriefing.com/feed.atom</id>
+  <title>Positivity Briefing</title>
+  <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
+  <updated>2026-10-17T08:46:49Z</updated>
+  <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
+  <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
+  <author>
+    <name>Dave Cross</name>
+  </author>
+  <entry>
+    <id>https://positivitybriefing.com/feed.atom#e335fdecea47cf51a36cecf010e18717c932cabfab9869e28aa0ac64b33d299c</id>
+    <title>Useful</title>
+    <updated>2026-10-17T08:46:49Z</updated>
+    <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">A hedgehog’s spines are modified hairs, made mostly of keratin—the same material as human fingernails. They’re replaced gradually, rather than all at once.</div>
+    </content>
+  </entry>
+  <entry>
+    <id>https://positivitybriefing.com/feed.atom#aae9e55048e611700bac2d21c5aff70f0c7db1bacb987f4f103f047622720f25</id>
+    <title>Hopeful</title>
+    <updated>2026-10-17T08:46:49Z</updated>
+    <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Repair cafés show how local know-how can keep household items in use: volunteers help people mend belongings, sharing skills as well as tools.</div>
+    </content>
+  </entry>
+  <entry>
+    <id>https://positivitybriefing.com/feed.atom#322c7ad15dbd4e0ee22b44e82cc288b1275436c6220eeef32144ddd31d2753b7</id>
+    <title>Action</title>
+    <updated>2026-10-17T08:46:49Z</updated>
+    <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">At your local library, check the noticeboard for a free event or shared resource you hadn’t noticed before; tell someone nearby what’s available.</div>
+    </content>
+  </entry>
+</feed>

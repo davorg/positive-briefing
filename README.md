@@ -28,8 +28,7 @@ Python is only used here as a convenient local static server.
 You need:
 
 - Perl 5.36 or newer.
-- The CPAN modules `OpenAPI::Client::OpenAI`, `JSON::MaybeXS`, `JSON::Validator`,
-  and `Path::Tiny`.
+- The CPAN runtime and test dependencies listed in `cpanfile`.
 - An OpenAI API key and network access to the API.
 
 From the repository root, install the runtime and test dependencies with `cpanm`:
@@ -70,16 +69,34 @@ previous-briefing context. They are joined with spaces:
 ./bin/get-briefing 'Give me a briefing for a rainy day: something useful, something hopeful, and one tiny action.'
 ```
 
-The command validates the response against the full JSON schema, then overwrites
-`docs/briefing.json` with a compact UTF-8 JSON array. The destination is relative
-to the script's location, so you can invoke it from any working directory.
-It writes and closes a temporary file in `docs/` before atomically replacing
-the existing briefing. API, parsing, validation, or file-writing failures leave
-the previous briefing intact; temporary files are cleaned up.
+The command validates the response against the full JSON schema, then creates
+`docs/briefing.json` as a compact UTF-8 JSON array and `docs/feed.atom` as an Atom
+feed. Destinations are relative to the script's location, so you can invoke it
+from any working directory. Both outputs are prepared and written to temporary
+files before either is published. Each destination is replaced atomically;
+the two replacements are separate filesystem operations. API, parsing,
+validation, or staging failures leave the previous files intact, and temporary
+files are cleaned up. Publish both outputs after a successful run.
 
 After a successful update, the same JSON is also printed to standard output.
 No shell redirection is needed to update the site. Keep the API key in the
 generator's environment; the static site does not need it.
+
+## Atom feed
+
+The production site URL is `https://positivitybriefing.com/`, and the feed URL
+is `https://positivitybriefing.com/feed.atom`. Locally, use
+<http://127.0.0.1:8000/feed.atom> after starting the preview server. The small
+feed icon after “Updated daily” links to it, and the HTML head includes an Atom
+autodiscovery link for feed readers.
+
+Each successful generation refreshes the feed with the latest three items as
+separate entries, with full text, category titles, UTC update timestamps, and
+links to the corresponding items on the page. `XML::Feed` handles Atom output;
+text is escaped before being passed to its inline XHTML content handling.
+Entry IDs depend on item position, type, and text, so unchanged items retain
+their identity across regenerations. The feed retains the current briefing
+only; it does not accumulate an archive.
 
 ## How it works
 
@@ -156,11 +173,13 @@ array's order and does not validate individual fields before rendering.
 | --- | --- |
 | `cpanfile` | Perl version requirement and runtime/test dependencies. |
 | `bin/get-briefing` | Perl CLI that requests, validates, saves, and prints a new briefing. |
+| `lib/PositivityBriefing/Feed.pm` | Builds the Atom feed using `XML::Feed`. |
 | `docs/index.html` | Page structure, loading message, and footer. |
 | `docs/app.js` | JSON fetching, rendering, error display, and background loading. |
 | `docs/style.css` | Responsive editorial layout, typography, and background styling. |
 | `docs/images/backgrounds/` | Bundled daily background photos and their credits. |
 | `docs/briefing.json` | Saved briefing served to every visitor. |
+| `docs/feed.atom` | Atom feed containing the latest three briefing items. |
 
 Despite its name, `docs/` is the website's public directory.
 
@@ -170,14 +189,16 @@ Publish the contents of `docs/` to a static web host, preserving the relative
 paths between the HTML, JavaScript, CSS, and JSON files. The host does not need
 Perl or an API key. The repository does not include deployment configuration.
 
-The page says “Updated daily”, but the repository contains no scheduler or automation to make that happen. To provide daily
-briefings, an external job must run the generator and publish the updated
-`briefing.json` after a successful run. Configure credentials in that job's
-environment. Generating the JSON locally does not update a hosted copy.
+The page says “Updated daily”, but the repository contains no scheduler or
+automation to make that happen. To provide daily briefings, an external job
+must run the generator and publish the updated `briefing.json` and `feed.atom`
+after a successful run. Configure credentials in that job's environment.
+Generating the files locally does not update a hosted copy.
 
-There is no generation timestamp, archive, or freshness check. All visitors see
-the same saved briefing until it is replaced. The generation request includes
-no search or retrieval tools, and the output format has no source citations.
+The feed includes generation timestamps, but there is no archive or page
+freshness check. All visitors see the same saved briefing until it is replaced.
+The generation request includes no search or retrieval tools, and the output
+format has no source citations.
 
 ## Local checks
 
@@ -198,7 +219,8 @@ valid UTF-8 JSON.
 They also check that invalid responses and failed file replacements preserve
 existing content and clean up temporary files. Each run uses an isolated copy
 of the generator and a temporary `docs/` directory.
-Prompt tests also cover topic selection, previous-briefing context, and custom
-prompt overrides. They require the Perl dependencies above and do not need an API key.
+They require the Perl dependencies above and do not need an API key.
+Feed tests also check Atom metadata, stable IDs, links, Unicode, XML escaping,
+and preservation of existing outputs when feed generation fails.
 Previewing the page also checks that the static files can be served together.
 There is no CI configuration in the repository.

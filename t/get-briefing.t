@@ -6,6 +6,7 @@ use Path::Tiny qw(path tempdir);
 use JSON::MaybeXS qw(decode_json encode_json);
 use OpenAPI::Client::OpenAI;
 use Test::More;
+use XML::LibXML;
 
 {
   package Local::Response;
@@ -41,8 +42,18 @@ sub run_generator {
   $bin->mkpath;
   $docs->mkpath;
   my $copy = $script->copy($bin->child('get-briefing'));
+  my $lib = $root->child('lib', 'PositivityBriefing');
+  $lib->mkpath;
+  $script->parent(2)->child('lib', 'PositivityBriefing', 'Feed.pm')->copy($lib->child('Feed.pm'));
   my $target = $docs->child('briefing.json');
   $target->spew_raw($options{previous} // $previous);
+  my $feed = $docs->child('feed.atom');
+  $feed->spew_raw('Previous feed');
+  if ($options{block_feed}) {
+    $feed->remove;
+    $feed->mkpath;
+    $feed->child('marker')->spew_raw('Previous feed');
+  }
 
   # Force a rename failure after writing the temporary file.
   if ($options{block_replace}) {
@@ -69,7 +80,6 @@ sub run_generator {
   local @ARGV = @{ $options{argv} // [] };
 
   my $request;
-
   no warnings qw(redefine once);
   local *OpenAPI::Client::OpenAI::new = sub { bless {}, $_[0] };
   local *OpenAPI::Client::OpenAI::createResponse = sub { $request = $_[1]; $tx };
@@ -80,11 +90,13 @@ sub run_generator {
   my $error = $@;
 
   my $saved = $options{block_replace} ? $target->child('marker') : $target;
+  my $saved_feed = $options{block_feed} ? $feed->child('marker') : $feed;
   return {
     error => $error, stdout => $stdout, stderr => $stderr, saved => $saved->slurp_raw,
     temporary_files => [$docs->children(qr/^\.briefing-/)],
     mode => $target->stat->mode & 0777,
     prompt => $request->{body}{input}[1]{content},
+    feed => $saved_feed->slurp_raw,
   };
 }
 
@@ -109,6 +121,11 @@ for my $case (
     is($@, '', 'stdout is valid UTF-8 JSON');
     is_deeply($decoded, $items, 'all briefing text survives unchanged');
     is($run->{saved}, $run->{stdout}, 'site file is replaced with the new JSON');
+    my $feed = XML::LibXML->load_xml(string => $run->{feed}, no_network => 1);
+    my @entries = $feed->findnodes('/*[local-name()="feed"]/*[local-name()="entry"]');
+    is(scalar @entries, 3, 'Atom feed contains three entries');
+    is_deeply([map { $_->findvalue('./*[local-name()="content"]/*[local-name()="div"]') } @entries],
+      [map { $_->{text} } @$items], 'Atom feed preserves the full Unicode briefing');
     is($run->{mode}, 0644, 'site file is readable by the static server');
     is_deeply($run->{temporary_files}, [], 'temporary file is removed');
   };
@@ -182,6 +199,7 @@ for my $case (
     my $run = run_generator($raw);
     isnt($run->{error}, '', 'invalid briefing is rejected');
     is($run->{saved}, $previous, 'previous briefing is preserved');
+    is($run->{feed}, 'Previous feed', 'previous feed is preserved');
     is($run->{stdout}, '', 'no invalid JSON is printed');
     is_deeply($run->{temporary_files}, [], 'no temporary files remain');
   };
@@ -191,6 +209,7 @@ subtest 'API failure preserves the briefing' => sub {
   my $run = run_generator(encode_json($valid), status => 500);
   like($run->{error}, qr/OpenAI request failed/, 'API failure is reported');
   is($run->{saved}, $previous, 'previous briefing is preserved');
+  is($run->{feed}, 'Previous feed', 'previous feed is preserved');
   is($run->{stdout}, '', 'no JSON is printed');
 };
 
@@ -198,8 +217,26 @@ subtest 'failed replacement is cleaned up' => sub {
   my $run = run_generator(encode_json($valid), block_replace => 1);
   like($run->{error}, qr/Cannot replace/, 'rename failure is reported');
   is($run->{saved}, $previous, 'existing destination content is preserved');
+  is($run->{feed}, 'Previous feed', 'previous feed is preserved');
   is($run->{stdout}, '', 'failed update does not print JSON');
   is_deeply($run->{temporary_files}, [], 'temporary file is removed on failure');
+};
+
+subtest 'blocked feed destination preserves both outputs' => sub {
+  my $run = run_generator(encode_json($valid), block_feed => 1);
+  like($run->{error}, qr/Cannot replace .*feed\.atom/, 'feed destination failure is reported');
+  is($run->{saved}, $previous, 'previous JSON is preserved');
+  is($run->{feed}, 'Previous feed', 'previous feed content is preserved');
+  is_deeply($run->{temporary_files}, [], 'staged files are removed');
+};
+
+subtest 'XML-invalid text preserves both outputs' => sub {
+  my $items = decode_json(encode_json($valid));
+  $items->{items}[0]{text} = "Invalid\0text";
+  my $run = run_generator(encode_json($items));
+  like($run->{error}, qr/XML cannot represent/, 'unrepresentable XML text is rejected');
+  is($run->{saved}, $previous, 'previous JSON is preserved');
+  is($run->{feed}, 'Previous feed', 'previous feed is preserved');
 };
 
 done_testing;

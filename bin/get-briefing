@@ -5,6 +5,8 @@ use utf8;
 use feature 'signatures';
 
 use Path::Tiny qw(path);
+use lib path(__FILE__)->realpath->parent(2)->child('lib')->stringify;
+use PositivityBriefing::Feed qw(build_feed);
 use OpenAPI::Client::OpenAI;
 use JSON::MaybeXS qw(decode_json);
 use JSON::Validator;
@@ -154,14 +156,26 @@ die "Invalid briefing format:\n", join("\n", map { "$_" } @errors), "\n"
   if @errors;
 
 my $json = JSON::MaybeXS->new->utf8->canonical->encode($parsed->{items}) . "\n";
+my $atom = build_feed($parsed->{items});
 
-my $temp = $docs->tempfile('.briefing-XXXXXX');
-my $fh = $temp->openw_raw;
-print {$fh} $json or die "Cannot write temporary briefing: $!\n";
-close $fh or die "Cannot close temporary briefing: $!\n";
-$temp->chmod(0644);
-# Use rename directly: move can fall back to copying or move into a directory.
-rename $temp, $target or die "Cannot replace $target: $!\n";
+my @pending;
+for my $output ([$target, $json], [$docs->child('feed.atom'), $atom]) {
+  my ($destination, $bytes) = @$output;
+  die "Cannot replace $destination: destination is not a file\n"
+    if $destination->exists && !$destination->is_file;
+  my $temp = $docs->tempfile('.briefing-XXXXXX');
+  my $fh = $temp->openw_raw;
+  print {$fh} $bytes or die "Cannot write temporary briefing: $!\n";
+  close $fh or die "Cannot close temporary briefing: $!\n";
+  $temp->chmod(0644);
+  push @pending, [$temp, $destination];
+}
+# Stage both outputs before replacing either, and replace each file atomically.
+for my $output (@pending) {
+  my ($temp, $destination) = @$output;
+  # Use rename directly: move can fall back to copying or move into a directory.
+  rename $temp, $destination or die "Cannot replace $destination: $!\n";
+}
 
 # Keep stdout useful for callers as well as updating the site.
 print $json;

@@ -58,6 +58,7 @@ function render(items) {
   for (const [index, item] of items.entries()) {
     const div = document.createElement("article");
     div.className = "point";
+    div.id = `item-${index + 1}`;
 
     const heading = document.createElement("div");
     heading.className = "point-heading";
