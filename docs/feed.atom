@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-17T08:46:49Z</updated>
+  <updated>2026-10-17T09:10:14Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#e335fdecea47cf51a36cecf010e18717c932cabfab9869e28aa0ac64b33d299c</id>
+    <id>https://positivitybriefing.com/feed.atom#cec2b0b93eaf59930fae2c2e9ec76c2e5789f9b9403025ef4fefb453694bb738</id>
     <title>Useful</title>
-    <updated>2026-10-17T08:46:49Z</updated>
+    <updated>2026-10-17T09:10:14Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A hedgehog’s spines are modified hairs, made mostly of keratin—the same material as human fingernails. They’re replaced gradually, rather than all at once.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Many public libraries lend more than books: some offer museum passes, tools or seed packets. Check your branch’s catalogue before buying something you’ll use only once.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#aae9e55048e611700bac2d21c5aff70f0c7db1bacb987f4f103f047622720f25</id>
+    <id>https://positivitybriefing.com/feed.atom#979d060a68fd473d019f2ccfc0bbd54f5c41ccc8e2a040a0f2a4e880c86e22f5</id>
     <title>Hopeful</title>
-    <updated>2026-10-17T08:46:49Z</updated>
+    <updated>2026-10-17T09:10:14Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Repair cafés show how local know-how can keep household items in use: volunteers help people mend belongings, sharing skills as well as tools.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A shared tool cupboard in a block of flats can turn an awkward repair into a neighbourly exchange: one drill, kept in good order, serves many homes.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#322c7ad15dbd4e0ee22b44e82cc288b1275436c6220eeef32144ddd31d2753b7</id>
+    <id>https://positivitybriefing.com/feed.atom#610a8370ad71123936721de04113e642329252a078bbec635fa958ba86e2e15b</id>
     <title>Action</title>
-    <updated>2026-10-17T08:46:49Z</updated>
+    <updated>2026-10-17T09:10:14Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">At your local library, check the noticeboard for a free event or shared resource you hadn’t noticed before; tell someone nearby what’s available.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes watching a patch of ground for ants; notice where they travel and whether they carry anything, without disturbing their route.</div>
     </content>
   </entry>
 </feed>
