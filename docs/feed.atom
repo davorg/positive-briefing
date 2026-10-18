@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-17T09:10:14Z</updated>
+  <updated>2026-10-18T00:57:21Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#cec2b0b93eaf59930fae2c2e9ec76c2e5789f9b9403025ef4fefb453694bb738</id>
+    <id>https://positivitybriefing.com/feed.atom#aba617afeb6beb241ca3058d294ce8e1c13195be2241c2fb36d3eeab07ed02c7</id>
     <title>Useful</title>
-    <updated>2026-10-17T09:10:14Z</updated>
+    <updated>2026-10-18T00:57:21Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Many public libraries lend more than books: some offer museum passes, tools or seed packets. Check your branch’s catalogue before buying something you’ll use only once.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A hedgehog’s spines are modified hairs, not quills; each is shed and replaced over time, much like human hair.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#979d060a68fd473d019f2ccfc0bbd54f5c41ccc8e2a040a0f2a4e880c86e22f5</id>
+    <id>https://positivitybriefing.com/feed.atom#5f3a80baffaab4a2cd5b7d4368002a3f9b4690cd5c709c14cb1548d6b03b9d36</id>
     <title>Hopeful</title>
-    <updated>2026-10-17T09:10:14Z</updated>
+    <updated>2026-10-18T00:57:21Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A shared tool cupboard in a block of flats can turn an awkward repair into a neighbourly exchange: one drill, kept in good order, serves many homes.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Crows can remember human faces and pass that knowledge to other crows, a striking example of learning travelling through a community.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#610a8370ad71123936721de04113e642329252a078bbec635fa958ba86e2e15b</id>
+    <id>https://positivitybriefing.com/feed.atom#c8e20ec5f7ea23bde6a847628f3175b35a46dcfac81233a5b357e1fd0e9a682d</id>
     <title>Action</title>
-    <updated>2026-10-17T09:10:14Z</updated>
+    <updated>2026-10-18T00:57:21Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes watching a patch of ground for ants; notice where they travel and whether they carry anything, without disturbing their route.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Take four minutes to clear one shelf in a shared cupboard: return misplaced items, wipe the surface with a cloth you already have, and leave it orderly.</div>
     </content>
   </entry>
 </feed>
