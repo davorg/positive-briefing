@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-19T00:57:23Z</updated>
+  <updated>2026-10-20T00:52:39Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#fc7c842de36c18a117f03fdbf28b490f3303596767d9d9eed1813537a08442f8</id>
+    <id>https://positivitybriefing.com/feed.atom#18833a923c5595234ee8b8e5ff28d2b6bb49054e2dbb1681672c0a3585791ba9</id>
     <title>Useful</title>
-    <updated>2026-10-19T00:57:23Z</updated>
+    <updated>2026-10-20T00:52:39Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">On a piano, the black keys mark groups of two and three; spotting that pattern makes it easier to find notes and invent a tune.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In English, a semicolon can join two complete, closely related sentences; it gives a pause firmer than a comma but gentler than a full stop.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#8fdd45cfb55ff43376b40fc95b816331f6cbb0e515fc5f2a78b8512c20b9f14e</id>
+    <id>https://positivitybriefing.com/feed.atom#5e842fe58ca992c2462dc013cd33cfaf6c4d9ae6a54df79b0be2c489659de540</id>
     <title>Hopeful</title>
-    <updated>2026-10-19T00:57:23Z</updated>
+    <updated>2026-10-20T00:52:39Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Free, open-source tools such as Audacity let people record and edit sound together across borders, showing how shared software can put creative skills within reach.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Library of Things movement lets neighbours borrow drills, sewing machines and other rarely used kit, making practical skills and useful equipment more widely accessible.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#4f98b1ebf474f678dcc1309cff200a511e440c1f3a90637db36777ff7e15a033</id>
+    <id>https://positivitybriefing.com/feed.atom#bdc0941cfb176a3889c3731198f238b511559230064a29440f8e657dd0cbe082</id>
     <title>Action</title>
-    <updated>2026-10-19T00:57:23Z</updated>
+    <updated>2026-10-20T00:52:39Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In under five minutes, chop leftover herbs or greens and stir them into butter, oil or a sauce you already have, rescuing flavour before it wilts.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar object nearby and spend three minutes listing five questions about it; then choose one you can answer from memory or observation.</div>
     </content>
   </entry>
 </feed>
