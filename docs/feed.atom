@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-20T00:52:39Z</updated>
+  <updated>2026-10-21T00:52:46Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#18833a923c5595234ee8b8e5ff28d2b6bb49054e2dbb1681672c0a3585791ba9</id>
+    <id>https://positivitybriefing.com/feed.atom#c89c1919fa4bfc0f68940d4a69635291d328172d2aebc382c9c6cbb79a61ee92</id>
     <title>Useful</title>
-    <updated>2026-10-20T00:52:39Z</updated>
+    <updated>2026-10-21T00:52:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In English, a semicolon can join two complete, closely related sentences; it gives a pause firmer than a comma but gentler than a full stop.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A metal spoon feels colder than a wooden one at the same room temperature because metal conducts heat away from your skin faster.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#5e842fe58ca992c2462dc013cd33cfaf6c4d9ae6a54df79b0be2c489659de540</id>
+    <id>https://positivitybriefing.com/feed.atom#d0be97aad29c332b519323d9b151aa07c0d1e6ca0e1b23c541d01d17cd6bc509</id>
     <title>Hopeful</title>
-    <updated>2026-10-20T00:52:39Z</updated>
+    <updated>2026-10-21T00:52:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Library of Things movement lets neighbours borrow drills, sewing machines and other rarely used kit, making practical skills and useful equipment more widely accessible.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges show how neighbours and local groups can redirect surplus food to people who need it, turning coordination into less waste and more shared support.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#bdc0941cfb176a3889c3731198f238b511559230064a29440f8e657dd0cbe082</id>
+    <id>https://positivitybriefing.com/feed.atom#8765ebfb3b196598560d9bcdf56ce41f1779cc48d313836f3dd2471e2a06560f</id>
     <title>Action</title>
-    <updated>2026-10-20T00:52:39Z</updated>
+    <updated>2026-10-21T00:52:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar object nearby and spend three minutes listing five questions about it; then choose one you can answer from memory or observation.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Use the next three minutes to chop leftover vegetables and stir them into a pan of eggs, soup or rice before they’re forgotten in the fridge.</div>
     </content>
   </entry>
 </feed>
