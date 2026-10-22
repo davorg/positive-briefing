@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-21T00:52:46Z</updated>
+  <updated>2026-10-22T00:51:57Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#c89c1919fa4bfc0f68940d4a69635291d328172d2aebc382c9c6cbb79a61ee92</id>
+    <id>https://positivitybriefing.com/feed.atom#f45a2e6808b0bfe633b161c8b37b93d3054a2c59a30994dc35529dc27f64391a</id>
     <title>Useful</title>
-    <updated>2026-10-21T00:52:46Z</updated>
+    <updated>2026-10-22T00:51:57Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A metal spoon feels colder than a wooden one at the same room temperature because metal conducts heat away from your skin faster.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A loose chair rung can often be steadied with wood glue: clean the joint, work glue into the gap, then clamp it until fully dry.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#d0be97aad29c332b519323d9b151aa07c0d1e6ca0e1b23c541d01d17cd6bc509</id>
+    <id>https://positivitybriefing.com/feed.atom#b03c13671d3029a586ee7a45d8fe764c12bf7394f66ba6a7e2a5187b14ea78ac</id>
     <title>Hopeful</title>
-    <updated>2026-10-21T00:52:46Z</updated>
+    <updated>2026-10-22T00:51:57Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges show how neighbours and local groups can redirect surplus food to people who need it, turning coordination into less waste and more shared support.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Mosses can dry out and look lifeless, then resume growing when rain returns; their resilience helps them thrive where many plants cannot.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#8765ebfb3b196598560d9bcdf56ce41f1779cc48d313836f3dd2471e2a06560f</id>
+    <id>https://positivitybriefing.com/feed.atom#0a18cc40d587129fa39de20cd64067ba4d97be4fc37b5fe5280e9d8a81d998a1</id>
     <title>Action</title>
-    <updated>2026-10-21T00:52:46Z</updated>
+    <updated>2026-10-22T00:51:57Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Use the next three minutes to chop leftover vegetables and stir them into a pan of eggs, soup or rice before they’re forgotten in the fridge.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend two minutes watching a patch of pavement or garden for ants, and notice how they navigate around obstacles without a map.</div>
     </content>
   </entry>
 </feed>
