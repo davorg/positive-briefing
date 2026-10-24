@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-23T00:54:20Z</updated>
+  <updated>2026-10-24T00:50:49Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#6989f722bdad68852d7f4aaf524a6a7c46809f0853789a161ed97111a45d8370</id>
+    <id>https://positivitybriefing.com/feed.atom#b07d546f59d8928f9a67ee4ef9001cb8aae2a872b91b5de4943592ebce5b05ed</id>
     <title>Useful</title>
-    <updated>2026-10-23T00:54:20Z</updated>
+    <updated>2026-10-24T00:50:49Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A strip of masking tape makes a handy label for freezer containers: write the contents and date on it, then peel it off cleanly when you wash the tub.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A hedgehog’s spines are modified hairs, each with a tiny muscle at its base; when threatened, it curls into a ball and raises them for protection.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#35094641a0745d8621731da793a7979d2cbdcee21c857382602bb6fbf9fa2a54</id>
+    <id>https://positivitybriefing.com/feed.atom#436db84971b933c733cdce1229ef3f63ebf1f1577d28817c2be4f918a34fb85e</id>
     <title>Hopeful</title>
-    <updated>2026-10-23T00:54:20Z</updated>
+    <updated>2026-10-24T00:50:49Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Wikipedia’s volunteers have built a vast reference work by checking sources, correcting errors and translating articles; shared digital tools can make patient collaboration remarkably useful.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Ugly or surplus fruit needn’t go to waste: community fridges and food-sharing groups connect households and shops with edible food to people who can use it.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#c1f30888bdb4ce06eecc084b2906f9627b86d4c3a6f30c181c1ec355918e3a54</id>
+    <id>https://positivitybriefing.com/feed.atom#9288e732edbb5e0f0949fbb7b59f0600c80eed960293968235606e8501261961</id>
     <title>Action</title>
-    <updated>2026-10-23T00:54:20Z</updated>
+    <updated>2026-10-24T00:50:49Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar word you’ve heard recently, guess its meaning from context, then look it up and try to recall it again in a few minutes.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Choose one kitchen drawer, remove anything that belongs elsewhere, and return those items to their proper homes; a single drawer is easy to finish in minutes.</div>
     </content>
   </entry>
 </feed>
