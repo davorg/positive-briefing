@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-24T00:50:49Z</updated>
+  <updated>2026-10-25T00:57:17Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#b07d546f59d8928f9a67ee4ef9001cb8aae2a872b91b5de4943592ebce5b05ed</id>
+    <id>https://positivitybriefing.com/feed.atom#2cd33e16b61e545152488bc6dfd7dd294f606d96f4898f5aae5b7b5d6c44dcdd</id>
     <title>Useful</title>
-    <updated>2026-10-24T00:50:49Z</updated>
+    <updated>2026-10-25T00:57:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A hedgehog’s spines are modified hairs, each with a tiny muscle at its base; when threatened, it curls into a ball and raises them for protection.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">When a neighbour offers help, make the request specific and time-limited: “Could you bring my parcel in today?” is easier to answer than a vague appeal.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#436db84971b933c733cdce1229ef3f63ebf1f1577d28817c2be4f918a34fb85e</id>
+    <id>https://positivitybriefing.com/feed.atom#a27fd9485f927608600c71b684b2235f8542ed5905905b946574eac5ed1750c3</id>
     <title>Hopeful</title>
-    <updated>2026-10-24T00:50:49Z</updated>
+    <updated>2026-10-25T00:57:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Ugly or surplus fruit needn’t go to waste: community fridges and food-sharing groups connect households and shops with edible food to people who can use it.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through contributions from thousands of volunteers, including readers who sent in quotations—proof that shared curiosity can build something lasting.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#9288e732edbb5e0f0949fbb7b59f0600c80eed960293968235606e8501261961</id>
+    <id>https://positivitybriefing.com/feed.atom#24f2ed4314aabfe41df7e02f6d8407072c0c58948a932305b8aa0972cd9b2461</id>
     <title>Action</title>
-    <updated>2026-10-24T00:50:49Z</updated>
+    <updated>2026-10-25T00:57:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Choose one kitchen drawer, remove anything that belongs elsewhere, and return those items to their proper homes; a single drawer is easy to finish in minutes.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">For two minutes, watch a patch of ground for ants or other small creatures; notice where they travel and what they carry, without disturbing them.</div>
     </content>
   </entry>
 </feed>
