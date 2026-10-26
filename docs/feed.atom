@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-25T00:57:17Z</updated>
+  <updated>2026-10-26T00:55:57Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#2cd33e16b61e545152488bc6dfd7dd294f606d96f4898f5aae5b7b5d6c44dcdd</id>
+    <id>https://positivitybriefing.com/feed.atom#7eb2fa1e2ec3755244d642e0557f0b1244a360a2b75044001ca44ef4f9f97689</id>
     <title>Useful</title>
-    <updated>2026-10-25T00:57:17Z</updated>
+    <updated>2026-10-26T00:55:57Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">When a neighbour offers help, make the request specific and time-limited: “Could you bring my parcel in today?” is easier to answer than a vague appeal.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Keep potatoes in a cool, dark, well-ventilated place, away from onions; light can turn them green and encourage bitter-tasting compounds to develop.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#a27fd9485f927608600c71b684b2235f8542ed5905905b946574eac5ed1750c3</id>
+    <id>https://positivitybriefing.com/feed.atom#b66de22df93485f3bc89e12d3ea1a62dbf4ca74b1eaaa700f57e74497bc37dd1</id>
     <title>Hopeful</title>
-    <updated>2026-10-25T00:57:17Z</updated>
+    <updated>2026-10-26T00:55:57Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through contributions from thousands of volunteers, including readers who sent in quotations—proof that shared curiosity can build something lasting.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges let neighbours share surplus food locally, helping edible groceries find a home instead of going to waste.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#24f2ed4314aabfe41df7e02f6d8407072c0c58948a932305b8aa0972cd9b2461</id>
+    <id>https://positivitybriefing.com/feed.atom#9dab45a1f7bf813afda98f6cbaa7213ffaa8b6799c1175e204ade098dd7e4da5</id>
     <title>Action</title>
-    <updated>2026-10-25T00:57:17Z</updated>
+    <updated>2026-10-26T00:55:57Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">For two minutes, watch a patch of ground for ants or other small creatures; notice where they travel and what they carry, without disturbing them.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Give a loose screw on a cupboard handle a quick turn with your fingers; tightening it now can stop the handle wobbling further.</div>
     </content>
   </entry>
 </feed>
