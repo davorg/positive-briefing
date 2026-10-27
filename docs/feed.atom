@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-26T00:55:57Z</updated>
+  <updated>2026-10-27T00:54:17Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#7eb2fa1e2ec3755244d642e0557f0b1244a360a2b75044001ca44ef4f9f97689</id>
+    <id>https://positivitybriefing.com/feed.atom#50c6b599a04d426be5ff6f7a3c64991efec83fd7c0cce648d0d8257365906276</id>
     <title>Useful</title>
-    <updated>2026-10-26T00:55:57Z</updated>
+    <updated>2026-10-27T00:54:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Keep potatoes in a cool, dark, well-ventilated place, away from onions; light can turn them green and encourage bitter-tasting compounds to develop.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A stuck zip often frees up when you rub the teeth with the graphite tip of a pencil; move the slider gently rather than forcing it.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#b66de22df93485f3bc89e12d3ea1a62dbf4ca74b1eaaa700f57e74497bc37dd1</id>
+    <id>https://positivitybriefing.com/feed.atom#4002a2129a0121f0d451349f03f3d5855d2d87baa9d47b719539eaea93d4a37e</id>
     <title>Hopeful</title>
-    <updated>2026-10-26T00:55:57Z</updated>
+    <updated>2026-10-27T00:54:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges let neighbours share surplus food locally, helping edible groceries find a home instead of going to waste.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Crows can recognise human faces and remember people who have threatened them—an impressive sign of how closely wildlife observes its world.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#9dab45a1f7bf813afda98f6cbaa7213ffaa8b6799c1175e204ade098dd7e4da5</id>
+    <id>https://positivitybriefing.com/feed.atom#10b4c8dfb7b077eba9b6e5d886823428da8103cdbf01476940340c5186950116</id>
     <title>Action</title>
-    <updated>2026-10-26T00:55:57Z</updated>
+    <updated>2026-10-27T00:54:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Give a loose screw on a cupboard handle a quick turn with your fingers; tightening it now can stop the handle wobbling further.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Send a neighbour a voice message asking how their week is going, then listen properly to their reply; it takes a minute and can open a friendly conversation.</div>
     </content>
   </entry>
 </feed>
