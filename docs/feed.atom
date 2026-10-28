@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-27T00:54:17Z</updated>
+  <updated>2026-10-28T00:41:45Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#50c6b599a04d426be5ff6f7a3c64991efec83fd7c0cce648d0d8257365906276</id>
+    <id>https://positivitybriefing.com/feed.atom#598b9219e820ccd0daeaaadfd7f3ff6f7c20853841483ac59414219f212eda9f</id>
     <title>Useful</title>
-    <updated>2026-10-27T00:54:17Z</updated>
+    <updated>2026-10-28T00:41:45Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A stuck zip often frees up when you rub the teeth with the graphite tip of a pencil; move the slider gently rather than forcing it.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A small tray by the front door gives keys and loose change a reliable home; choose one you already own, such as a saucer or shallow bowl.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#4002a2129a0121f0d451349f03f3d5855d2d87baa9d47b719539eaea93d4a37e</id>
+    <id>https://positivitybriefing.com/feed.atom#57f046707b41e9d65ee966ffd9fbc1f57336d674d963e030bda7aecc93aa76b0</id>
     <title>Hopeful</title>
-    <updated>2026-10-27T00:54:17Z</updated>
+    <updated>2026-10-28T00:41:45Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Crows can recognise human faces and remember people who have threatened them—an impressive sign of how closely wildlife observes its world.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Beavers reshape streams with dams built from branches and mud, creating ponds and wetlands that provide habitat for many other species too.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#10b4c8dfb7b077eba9b6e5d886823428da8103cdbf01476940340c5186950116</id>
+    <id>https://positivitybriefing.com/feed.atom#7edd3763e5bb43a14a562e0ff6e9834595b7161bc8ad68041dce2a4da766aa69</id>
     <title>Action</title>
-    <updated>2026-10-27T00:54:17Z</updated>
+    <updated>2026-10-28T00:41:45Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Send a neighbour a voice message asking how their week is going, then listen properly to their reply; it takes a minute and can open a friendly conversation.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Give a wooden spoon a quick check for rough splinters; smooth a tiny snag gently with the edge of a sturdy cardboard scrap, then wipe it clean.</div>
     </content>
   </entry>
 </feed>
