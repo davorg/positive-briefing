@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-28T00:41:45Z</updated>
+  <updated>2026-10-29T00:41:00Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#598b9219e820ccd0daeaaadfd7f3ff6f7c20853841483ac59414219f212eda9f</id>
+    <id>https://positivitybriefing.com/feed.atom#7cf9714a113d91bf36deec3488de8ca7870cf7a2188477c8ffeb7a5f3d7a69f8</id>
     <title>Useful</title>
-    <updated>2026-10-28T00:41:45Z</updated>
+    <updated>2026-10-29T00:41:00Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A small tray by the front door gives keys and loose change a reliable home; choose one you already own, such as a saucer or shallow bowl.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A metal spoon feels colder than a wooden one in the same room because metal conducts heat away from your hand much faster.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#57f046707b41e9d65ee966ffd9fbc1f57336d674d963e030bda7aecc93aa76b0</id>
+    <id>https://positivitybriefing.com/feed.atom#ad1f8638f847e8633b5cdaaf6376ec0dedfae7c857e00b50482ca066c263d374</id>
     <title>Hopeful</title>
-    <updated>2026-10-28T00:41:45Z</updated>
+    <updated>2026-10-29T00:41:00Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Beavers reshape streams with dams built from branches and mud, creating ponds and wetlands that provide habitat for many other species too.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The freely available Linux operating system grew from shared work by programmers around the world, showing how digital tools can improve through open collaboration.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#7edd3763e5bb43a14a562e0ff6e9834595b7161bc8ad68041dce2a4da766aa69</id>
+    <id>https://positivitybriefing.com/feed.atom#49ae968449d7c6963f00bbe947d44bb0f6a3b58107fde0398d424710022509ec</id>
     <title>Action</title>
-    <updated>2026-10-28T00:41:45Z</updated>
+    <updated>2026-10-29T00:41:00Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Give a wooden spoon a quick check for rough splinters; smooth a tiny snag gently with the edge of a sturdy cardboard scrap, then wipe it clean.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes tracing how an ordinary object near you works—perhaps a zip fastener—and imagine the overlooked design decisions that made it useful.</div>
     </content>
   </entry>
 </feed>
