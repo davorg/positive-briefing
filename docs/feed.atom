@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-29T00:41:00Z</updated>
+  <updated>2026-10-30T00:41:58Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#7cf9714a113d91bf36deec3488de8ca7870cf7a2188477c8ffeb7a5f3d7a69f8</id>
+    <id>https://positivitybriefing.com/feed.atom#b487157dee83f3f4cc7711a5e457f22f639815bef3f23a843a0c281beb0835b8</id>
     <title>Useful</title>
-    <updated>2026-10-29T00:41:00Z</updated>
+    <updated>2026-10-30T00:41:58Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A metal spoon feels colder than a wooden one in the same room because metal conducts heat away from your hand much faster.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In a library, returned books may be shelved by subject rather than alphabetically; the catalogue’s location details help you find the right shelf without guessing.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#ad1f8638f847e8633b5cdaaf6376ec0dedfae7c857e00b50482ca066c263d374</id>
+    <id>https://positivitybriefing.com/feed.atom#fa6d1e499e1d00512f810c88f004d285a8192bf6e68fe17fdd9f46b8607c27e8</id>
     <title>Hopeful</title>
-    <updated>2026-10-29T00:41:00Z</updated>
+    <updated>2026-10-30T00:41:58Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The freely available Linux operating system grew from shared work by programmers around the world, showing how digital tools can improve through open collaboration.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Oxfam Wastesaver centre in Batley has long sorted donated clothes for reuse and recycling, turning unwanted garments into useful materials and supporting skilled work.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#49ae968449d7c6963f00bbe947d44bb0f6a3b58107fde0398d424710022509ec</id>
+    <id>https://positivitybriefing.com/feed.atom#cf68faa4aadf1d1b3a26e9b6e9442bce4213f2ed64ce9e43c4750a001d7346c5</id>
     <title>Action</title>
-    <updated>2026-10-29T00:41:00Z</updated>
+    <updated>2026-10-30T00:41:58Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes tracing how an ordinary object near you works—perhaps a zip fastener—and imagine the overlooked design decisions that made it useful.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Before cooking, inspect the vegetables you have: tear edible beet leaves or herb stems into a pan or bowl, adding them to today’s meal instead of the bin.</div>
     </content>
   </entry>
 </feed>
