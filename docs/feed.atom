@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-10-30T00:41:58Z</updated>
+  <updated>2026-10-31T00:34:28Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#b487157dee83f3f4cc7711a5e457f22f639815bef3f23a843a0c281beb0835b8</id>
+    <id>https://positivitybriefing.com/feed.atom#f2b1bf929e96940f43bb6286045cc2c9959fbe7c1f99e3715a39430ecf958f23</id>
     <title>Useful</title>
-    <updated>2026-10-30T00:41:58Z</updated>
+    <updated>2026-10-31T00:34:28Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In a library, returned books may be shelved by subject rather than alphabetically; the catalogue’s location details help you find the right shelf without guessing.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In most browsers, Ctrl+L (or Command+L on a Mac) moves the cursor straight to the address bar, a quick way to enter a web address or search.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#fa6d1e499e1d00512f810c88f004d285a8192bf6e68fe17fdd9f46b8607c27e8</id>
+    <id>https://positivitybriefing.com/feed.atom#a23df1ca75d2f382168c3c3413b1808651edc41e622ccfb9dbef8a508b616ffe</id>
     <title>Hopeful</title>
-    <updated>2026-10-30T00:41:58Z</updated>
+    <updated>2026-10-31T00:34:28Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Oxfam Wastesaver centre in Batley has long sorted donated clothes for reuse and recycling, turning unwanted garments into useful materials and supporting skilled work.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The 1950s musique concrète composers made art from everyday sounds—trains, kitchen objects and footsteps—showing how playful listening can turn ordinary noise into new music.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#cf68faa4aadf1d1b3a26e9b6e9442bce4213f2ed64ce9e43c4750a001d7346c5</id>
+    <id>https://positivitybriefing.com/feed.atom#e0b6be9d8137f3425ef437d8983c9cf851debad9ae75b9bb9cb98600cead212c</id>
     <title>Action</title>
-    <updated>2026-10-30T00:41:58Z</updated>
+    <updated>2026-10-31T00:34:28Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Before cooking, inspect the vegetables you have: tear edible beet leaves or herb stems into a pan or bowl, adding them to today’s meal instead of the bin.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">If a mug’s handle feels loose, empty it and check the join; gently tighten any visible screw by hand, then set the mug aside until you can test it safely.</div>
     </content>
   </entry>
 </feed>
