@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-01T00:41:52Z</updated>
+  <updated>2026-11-02T00:37:33Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#480ec347983aeef2fe011fd0153bc001d3022ba9fe1ecc4c3c105b0c9fbcbb5f</id>
+    <id>https://positivitybriefing.com/feed.atom#b5c2b7c0744961de583072080ea5015a8a67b78f7df86a924790c6f62544d2b6</id>
     <title>Useful</title>
-    <updated>2026-11-01T00:41:52Z</updated>
+    <updated>2026-11-02T00:37:33Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Bumblebees can learn to open flowers by watching another bee, then remember the technique—useful evidence that some insects pick up skills socially.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Testing yourself from memory strengthens recall more than simply rereading; after a page, close the book and see what you can explain in your own words.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#53d65f0be9d243489c32f4d3b9b5ac0bcf21e35aa6ee013a65906e2bc643d7e7</id>
+    <id>https://positivitybriefing.com/feed.atom#16dedb9ceaeae828aa3bedf1a22bcdbb40cbae8894d8f55c77b03e7d231d7c28</id>
     <title>Hopeful</title>
-    <updated>2026-11-01T00:41:52Z</updated>
+    <updated>2026-11-02T00:37:33Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In South Korea, restaurants and households separate food scraps for composting and animal feed; turning leftovers into useful resources is an established part of waste reduction.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges show how neighbours and local groups can organise surplus food for people who need it, turning practical coordination into everyday support.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#f85c8768432e81250adc07820461dfd8726b7c64955baf83e54b75ac88e32e7e</id>
+    <id>https://positivitybriefing.com/feed.atom#4ae97e0687bba3a763b87b032480eff297d4f8e0d2ed3ce981a94aa3993074d5</id>
     <title>Action</title>
-    <updated>2026-11-01T00:41:52Z</updated>
+    <updated>2026-11-02T00:37:33Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Send a neighbour a quick message asking what local bird they’ve spotted lately, then share your own sighting; it’s an easy way to start a friendly exchange.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Pick a book nearby, open to any page and read one paragraph aloud; then retell it in a single sentence, as if telling a friend.</div>
     </content>
   </entry>
 </feed>
