@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-03T00:34:49Z</updated>
+  <updated>2026-11-04T00:34:31Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#896b852025156bd99b8bc632c5bb920b5c471c96c3a4a7cd44bd27fa8a8cfe03</id>
+    <id>https://positivitybriefing.com/feed.atom#40875587e574557eaf41bd46695e2644da33c0abd4a806d4515efa96781ec407</id>
     <title>Useful</title>
-    <updated>2026-11-03T00:34:49Z</updated>
+    <updated>2026-11-04T00:34:31Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A small tray by the front door can corral keys, post and loose change; give each item a fixed place and the daily search becomes simpler.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A melody is easier to recall when you tap its rhythm as you hum; try it with a tune you know, and notice where the beat falls.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#ffbdb78ee99d01bf543fb01020b159060c810f32e82e0e9610a32d01e336b576</id>
+    <id>https://positivitybriefing.com/feed.atom#15e9734d271e0c15b8b42e2331a073c256eee5d153bc3b6f3b21fd266b20d775</id>
     <title>Hopeful</title>
-    <updated>2026-11-03T00:34:49Z</updated>
+    <updated>2026-11-04T00:34:31Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The first public libraries made knowledge available beyond private collections: people pooling books created a lasting way for curiosity to travel across generations.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Many community repair cafés bring neighbours together to mend household goods, sharing skills that keep useful objects in service rather than sending them straight to waste.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#f793edc89158e5c586c499d9523fc2f028bc058630930a74691e89a2bf3bd839</id>
+    <id>https://positivitybriefing.com/feed.atom#f22c867836c4f46ac2904eb1748095e5a9b98034ee22b4c4a578a75243fe32a9</id>
     <title>Action</title>
-    <updated>2026-11-03T00:34:49Z</updated>
+    <updated>2026-11-04T00:34:31Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes renaming one vaguely titled computer file with its date and purpose, then move it into a clearly named folder.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar word from something you read, guess its meaning from the sentence, then check it in a dictionary and use it in a new sentence.</div>
     </content>
   </entry>
 </feed>
