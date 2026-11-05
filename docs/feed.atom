@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-04T00:34:31Z</updated>
+  <updated>2026-11-05T00:35:30Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#40875587e574557eaf41bd46695e2644da33c0abd4a806d4515efa96781ec407</id>
+    <id>https://positivitybriefing.com/feed.atom#63c5cd2d0ed531a7c46bbbe1f5dab251c1abe5ab5207b25fc324066baaaef1b1</id>
     <title>Useful</title>
-    <updated>2026-11-04T00:34:31Z</updated>
+    <updated>2026-11-05T00:35:30Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A melody is easier to recall when you tap its rhythm as you hum; try it with a tune you know, and notice where the beat falls.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In dialogue, a character’s word choice can reveal more than a description: give each speaker a distinctive phrase or rhythm, then remove their names and see if you can tell them apart.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#15e9734d271e0c15b8b42e2331a073c256eee5d153bc3b6f3b21fd266b20d775</id>
+    <id>https://positivitybriefing.com/feed.atom#1a6b613199cc177bcba225d94a7b4a026d8148fc23fa2dd5bf008a3b136117b8</id>
     <title>Hopeful</title>
-    <updated>2026-11-04T00:34:31Z</updated>
+    <updated>2026-11-05T00:35:30Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Many community repair cafés bring neighbours together to mend household goods, sharing skills that keep useful objects in service rather than sending them straight to waste.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Crows can recognise human faces and remember people who have threatened them; their sharp social memory is a reminder of how adaptable wildlife can be.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#f22c867836c4f46ac2904eb1748095e5a9b98034ee22b4c4a578a75243fe32a9</id>
+    <id>https://positivitybriefing.com/feed.atom#564f0c4a0424d23a72368e8f345a4e9c625f1e9b11a88b7f6f5357496a6308fc</id>
     <title>Action</title>
-    <updated>2026-11-04T00:34:31Z</updated>
+    <updated>2026-11-05T00:35:30Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar word from something you read, guess its meaning from the sentence, then check it in a dictionary and use it in a new sentence.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Open a document you use often and try its search shortcut—Ctrl+F on Windows or Command+F on Mac—to find a word or phrase without scrolling.</div>
     </content>
   </entry>
 </feed>
