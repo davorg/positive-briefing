@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-05T00:35:30Z</updated>
+  <updated>2026-11-06T00:35:22Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#63c5cd2d0ed531a7c46bbbe1f5dab251c1abe5ab5207b25fc324066baaaef1b1</id>
+    <id>https://positivitybriefing.com/feed.atom#87d651ba2e29b2d33022721116cb300a1d4b5725fc1102ee4f0d5ec983180fab</id>
     <title>Useful</title>
-    <updated>2026-11-05T00:35:30Z</updated>
+    <updated>2026-11-06T00:35:22Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In dialogue, a character’s word choice can reveal more than a description: give each speaker a distinctive phrase or rhythm, then remove their names and see if you can tell them apart.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">When learning a new word, meet it in several different sentences rather than repeating one definition; varied contexts help you grasp how it works.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#1a6b613199cc177bcba225d94a7b4a026d8148fc23fa2dd5bf008a3b136117b8</id>
+    <id>https://positivitybriefing.com/feed.atom#20365dadd959eecd3ce92f996929c7354ccef92a8086b59f2b8a2f67119d35e9</id>
     <title>Hopeful</title>
-    <updated>2026-11-05T00:35:30Z</updated>
+    <updated>2026-11-06T00:35:22Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Crows can recognise human faces and remember people who have threatened them; their sharp social memory is a reminder of how adaptable wildlife can be.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Open-source software shows how people who may never meet can improve shared tools together: Linux, built by a worldwide community, powers computers from phones to supercomputers.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#564f0c4a0424d23a72368e8f345a4e9c625f1e9b11a88b7f6f5357496a6308fc</id>
+    <id>https://positivitybriefing.com/feed.atom#e122fdc86c505bc452ffcb39df3cfce4ace0edba036d07947adaa93004934aa1</id>
     <title>Action</title>
-    <updated>2026-11-05T00:35:30Z</updated>
+    <updated>2026-11-06T00:35:22Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Open a document you use often and try its search shortcut—Ctrl+F on Windows or Command+F on Mac—to find a word or phrase without scrolling.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Before making breakfast, inspect the fridge for a wilting herb or leftover vegetable; chop a little into eggs, toast or porridge, using what’s already there.</div>
     </content>
   </entry>
 </feed>
