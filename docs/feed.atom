@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-06T00:35:22Z</updated>
+  <updated>2026-11-07T00:33:06Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#87d651ba2e29b2d33022721116cb300a1d4b5725fc1102ee4f0d5ec983180fab</id>
+    <id>https://positivitybriefing.com/feed.atom#f75267775a550355ca607677d71c90c81ea6420d54fab83660fd6e108373a1ba</id>
     <title>Useful</title>
-    <updated>2026-11-06T00:35:22Z</updated>
+    <updated>2026-11-07T00:33:06Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">When learning a new word, meet it in several different sentences rather than repeating one definition; varied contexts help you grasp how it works.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In many public libraries, a reference librarian can help trace a reliable source or find local records; bring a question, even if it’s still a rough one.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#20365dadd959eecd3ce92f996929c7354ccef92a8086b59f2b8a2f67119d35e9</id>
+    <id>https://positivitybriefing.com/feed.atom#45a3734ffa4fb053e7167d9693a71dd941a7c8a6daf726031e87defb18a1804d</id>
     <title>Hopeful</title>
-    <updated>2026-11-06T00:35:22Z</updated>
+    <updated>2026-11-07T00:33:06Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Open-source software shows how people who may never meet can improve shared tools together: Linux, built by a worldwide community, powers computers from phones to supercomputers.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Rosetta Stone helped scholars decipher Egyptian hieroglyphs because its decree appeared in three scripts, turning careful comparison into a bridge across centuries.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#e122fdc86c505bc452ffcb39df3cfce4ace0edba036d07947adaa93004934aa1</id>
+    <id>https://positivitybriefing.com/feed.atom#e03f905f2837a58fe8fd957370e08f3b6aa48b84c7113ea618d66bb0cec53c9c</id>
     <title>Action</title>
-    <updated>2026-11-06T00:35:22Z</updated>
+    <updated>2026-11-07T00:33:06Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Before making breakfast, inspect the fridge for a wilting herb or leftover vegetable; chop a little into eggs, toast or porridge, using what’s already there.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes clearing one small surface at home: return stray items to their usual places, and leave the area ready for its next use.</div>
     </content>
   </entry>
 </feed>
