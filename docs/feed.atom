@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-07T00:33:06Z</updated>
+  <updated>2026-11-08T00:38:07Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#f75267775a550355ca607677d71c90c81ea6420d54fab83660fd6e108373a1ba</id>
+    <id>https://positivitybriefing.com/feed.atom#40eaa7ee709f940d1ba13722140c4c470d370cb01c3383dda73783885ff6d655</id>
     <title>Useful</title>
-    <updated>2026-11-07T00:33:06Z</updated>
+    <updated>2026-11-08T00:38:07Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In many public libraries, a reference librarian can help trace a reliable source or find local records; bring a question, even if it’s still a rough one.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A strip of masking tape makes a handy temporary label for freezer containers: write the contents and date on it, then peel it off cleanly when the tub is empty.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#45a3734ffa4fb053e7167d9693a71dd941a7c8a6daf726031e87defb18a1804d</id>
+    <id>https://positivitybriefing.com/feed.atom#8d53bf568517de822f29150ad09c19979ac000cd250454ce89a51e9d1bbe8a16</id>
     <title>Hopeful</title>
-    <updated>2026-11-07T00:33:06Z</updated>
+    <updated>2026-11-08T00:38:07Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Rosetta Stone helped scholars decipher Egyptian hieroglyphs because its decree appeared in three scripts, turning careful comparison into a bridge across centuries.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A bicycle dynamo turns the wheel’s motion into electricity for its lights; a simple bit of engineering can make an ordinary journey safer without batteries.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#e03f905f2837a58fe8fd957370e08f3b6aa48b84c7113ea618d66bb0cec53c9c</id>
+    <id>https://positivitybriefing.com/feed.atom#3a0852dfc2ed3d95a83a47e879e54ca1f0e2b200737700a3f4dc91b5f9d218cb</id>
     <title>Action</title>
-    <updated>2026-11-07T00:33:06Z</updated>
+    <updated>2026-11-08T00:38:07Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes clearing one small surface at home: return stray items to their usual places, and leave the area ready for its next use.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Use two minutes to search your email for “unsubscribe”, then remove yourself from one mailing list you no longer read; most inboxes make this easy from a message.</div>
     </content>
   </entry>
 </feed>
