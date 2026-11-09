@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-08T00:38:07Z</updated>
+  <updated>2026-11-09T00:38:08Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#40eaa7ee709f940d1ba13722140c4c470d370cb01c3383dda73783885ff6d655</id>
+    <id>https://positivitybriefing.com/feed.atom#659826ee7adb242c20b6f3f1889fe25953f13389a0d0d835867afef132571684</id>
     <title>Useful</title>
-    <updated>2026-11-08T00:38:07Z</updated>
+    <updated>2026-11-09T00:38:08Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A strip of masking tape makes a handy temporary label for freezer containers: write the contents and date on it, then peel it off cleanly when the tub is empty.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Keep potatoes away from onions: onions release moisture and gases that can encourage potatoes to sprout sooner. A cool, dark, ventilated cupboard suits potatoes better.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#8d53bf568517de822f29150ad09c19979ac000cd250454ce89a51e9d1bbe8a16</id>
+    <id>https://positivitybriefing.com/feed.atom#59bc59bd7c53e382121661a77fdf79694678753af2e96a3bc3b549c151e2ed65</id>
     <title>Hopeful</title>
-    <updated>2026-11-08T00:38:07Z</updated>
+    <updated>2026-11-09T00:38:08Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A bicycle dynamo turns the wheel’s motion into electricity for its lights; a simple bit of engineering can make an ordinary journey safer without batteries.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Public libraries lend more than books: many offer tool-lending collections, letting neighbours share drills and other occasional-use kit instead of each household buying its own.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#3a0852dfc2ed3d95a83a47e879e54ca1f0e2b200737700a3f4dc91b5f9d218cb</id>
+    <id>https://positivitybriefing.com/feed.atom#21dce3d33b94ac23aef4317c5e50d37af496756452a6ffc2a63cf20c80cf788f</id>
     <title>Action</title>
-    <updated>2026-11-08T00:38:07Z</updated>
+    <updated>2026-11-09T00:38:08Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Use two minutes to search your email for “unsubscribe”, then remove yourself from one mailing list you no longer read; most inboxes make this easy from a message.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">On your next visit to a park, library or community hall, take a moment to check its noticeboard and straighten one slipped flyer so useful local information stays visible.</div>
     </content>
   </entry>
 </feed>
