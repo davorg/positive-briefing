@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-09T00:38:08Z</updated>
+  <updated>2026-11-10T00:33:41Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#659826ee7adb242c20b6f3f1889fe25953f13389a0d0d835867afef132571684</id>
+    <id>https://positivitybriefing.com/feed.atom#20cb29213543bfc5d6f698ea954fd943767014c23ab913b9ee274cf5e10d8abc</id>
     <title>Useful</title>
-    <updated>2026-11-09T00:38:08Z</updated>
+    <updated>2026-11-10T00:33:41Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Keep potatoes away from onions: onions release moisture and gases that can encourage potatoes to sprout sooner. A cool, dark, ventilated cupboard suits potatoes better.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A simple way to make a melody feel finished is to repeat its opening phrase at the end; that return gives listeners a satisfying sense of arrival.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#59bc59bd7c53e382121661a77fdf79694678753af2e96a3bc3b549c151e2ed65</id>
+    <id>https://positivitybriefing.com/feed.atom#22d3060ea54958aceb4c8d17137b79fdeb2077ee3b0594c60557e4abb1187348</id>
     <title>Hopeful</title>
-    <updated>2026-11-09T00:38:08Z</updated>
+    <updated>2026-11-10T00:33:41Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Public libraries lend more than books: many offer tool-lending collections, letting neighbours share drills and other occasional-use kit instead of each household buying its own.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A well-organised home can make shared repairs easier: community repair cafés bring people together to mend household items, passing on practical skills as well as saving useful things.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#21dce3d33b94ac23aef4317c5e50d37af496756452a6ffc2a63cf20c80cf788f</id>
+    <id>https://positivitybriefing.com/feed.atom#4c35e9d1ba8e88b5cca00812dff8ed68937b427b9226425b56cd8801a5733a5f</id>
     <title>Action</title>
-    <updated>2026-11-09T00:38:08Z</updated>
+    <updated>2026-11-10T00:33:41Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">On your next visit to a park, library or community hall, take a moment to check its noticeboard and straighten one slipped flyer so useful local information stays visible.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Turn leftover cooked rice into a quick lunch: stir it in a pan with a splash of water and any spare vegetables until piping hot, using what’s already in the fridge.</div>
     </content>
   </entry>
 </feed>
