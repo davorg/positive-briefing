@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-10T00:33:41Z</updated>
+  <updated>2026-11-11T00:34:39Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#20cb29213543bfc5d6f698ea954fd943767014c23ab913b9ee274cf5e10d8abc</id>
+    <id>https://positivitybriefing.com/feed.atom#26a2301e5458b877240bae352a316026500f3439977c41ed990a4ddc9aa61bca</id>
     <title>Useful</title>
-    <updated>2026-11-10T00:33:41Z</updated>
+    <updated>2026-11-11T00:34:39Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A simple way to make a melody feel finished is to repeat its opening phrase at the end; that return gives listeners a satisfying sense of arrival.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Inca engineers built terraces that slowed rainwater and reduced soil erosion on steep slopes; their stone walls also helped create productive growing spaces in rugged terrain.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#22d3060ea54958aceb4c8d17137b79fdeb2077ee3b0594c60557e4abb1187348</id>
+    <id>https://positivitybriefing.com/feed.atom#60fcbe0aa7de28a5c6eabbf8a27c80f8aa8bfe1f0e949ee091a24607eb6695c0</id>
     <title>Hopeful</title>
-    <updated>2026-11-10T00:33:41Z</updated>
+    <updated>2026-11-11T00:34:39Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A well-organised home can make shared repairs easier: community repair cafés bring people together to mend household items, passing on practical skills as well as saving useful things.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through thousands of volunteer readers who sent in quotations from books and newspapers, showing how shared attention can build a lasting record of language.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#4c35e9d1ba8e88b5cca00812dff8ed68937b427b9226425b56cd8801a5733a5f</id>
+    <id>https://positivitybriefing.com/feed.atom#678222beb2f3b70f452d5fbe85846eaaa553a377fe8b18510c83fa0e9eeab0c7</id>
     <title>Action</title>
-    <updated>2026-11-10T00:33:41Z</updated>
+    <updated>2026-11-11T00:34:39Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Turn leftover cooked rice into a quick lunch: stir it in a pan with a splash of water and any spare vegetables until piping hot, using what’s already in the fridge.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">For two minutes, watch one patch of ground or hedge for movement: note any beetle, bird or leaf stirred by a breeze, then leave the habitat undisturbed.</div>
     </content>
   </entry>
 </feed>
