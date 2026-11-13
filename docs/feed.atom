@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-12T00:35:51Z</updated>
+  <updated>2026-11-13T00:35:45Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#2443756e78c3ea1d4f471ebb95c8c4d0da5ea3448c60a66ee1558df2dd49a889</id>
+    <id>https://positivitybriefing.com/feed.atom#79c3f994011702bd78a39c6d4c9b98b8bf18b1a34f174604c1fe4018bc7825ac</id>
     <title>Useful</title>
-    <updated>2026-11-12T00:35:51Z</updated>
+    <updated>2026-11-13T00:35:45Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A melody becomes easier to remember when you tap its rhythm while humming; the pulse gives your ear a simple scaffold for exploring variations.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A robin’s orange breast is easiest to spot in winter: with leaves gone and food scarcer, these birds often defend feeding territories more visibly.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#f9cbd7b9369b5b6defec1b6cd0653134c6ea017f57d536bd8980282c465811d2</id>
+    <id>https://positivitybriefing.com/feed.atom#027c02b94ea1b6cf94576dee0407ed84ef2e6aae89b15527368da035066f6879</id>
     <title>Hopeful</title>
-    <updated>2026-11-12T00:35:51Z</updated>
+    <updated>2026-11-13T00:35:45Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Tool libraries let neighbours borrow drills and sewing machines instead of buying their own; sharing practical equipment makes useful skills accessible across a community.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges show how a simple shared resource can prevent good food going to waste: local groups coordinate donations and let neighbours take what they need.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#ec3bf9fc738d0652ad663cfd02ec83a5887b1e7f34b95d42d48f5e7f09f147a3</id>
+    <id>https://positivitybriefing.com/feed.atom#f425c3c87f066c3a7fa397f3cd299430aae9f9e5657819f476fc6bbfe5330c52</id>
     <title>Action</title>
-    <updated>2026-11-12T00:35:51Z</updated>
+    <updated>2026-11-13T00:35:45Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In under five minutes, picture a Roman road being built: name three jobs workers had to solve—measuring, drainage and moving stone—and imagine one tool for each.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Next time you pass a library, spend three minutes checking its noticeboard for a free local event, then tell someone who might enjoy it.</div>
     </content>
   </entry>
 </feed>
