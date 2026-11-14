@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-13T00:35:45Z</updated>
+  <updated>2026-11-14T00:33:46Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#79c3f994011702bd78a39c6d4c9b98b8bf18b1a34f174604c1fe4018bc7825ac</id>
+    <id>https://positivitybriefing.com/feed.atom#56979836d03ffead2c42244e7508cc42bb3b147765cfff05f7357eb980659fc6</id>
     <title>Useful</title>
-    <updated>2026-11-13T00:35:45Z</updated>
+    <updated>2026-11-14T00:33:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A robin’s orange breast is easiest to spot in winter: with leaves gone and food scarcer, these birds often defend feeding territories more visibly.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Keep potatoes in a cool, dark, well-ventilated place, but not beside onions: onions release moisture and gases that can encourage potatoes to sprout.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#027c02b94ea1b6cf94576dee0407ed84ef2e6aae89b15527368da035066f6879</id>
+    <id>https://positivitybriefing.com/feed.atom#0db871d2a7e9a19eab8a1daaf18df57e30c668cf9eb1f90cfe7ab680fdf43f1c</id>
     <title>Hopeful</title>
-    <updated>2026-11-13T00:35:45Z</updated>
+    <updated>2026-11-14T00:33:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Community fridges show how a simple shared resource can prevent good food going to waste: local groups coordinate donations and let neighbours take what they need.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through thousands of volunteer readers sending in quotations from books and newspapers, showing how shared curiosity can build a lasting record of language.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#f425c3c87f066c3a7fa397f3cd299430aae9f9e5657819f476fc6bbfe5330c52</id>
+    <id>https://positivitybriefing.com/feed.atom#5de505a88aca6871356da3cff36f82b6396cb4fc3c0be8b0af4bcf6c6bd4907b</id>
     <title>Action</title>
-    <updated>2026-11-13T00:35:45Z</updated>
+    <updated>2026-11-14T00:33:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Next time you pass a library, spend three minutes checking its noticeboard for a free local event, then tell someone who might enjoy it.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar word from something you read today. Spend two minutes guessing its meaning from context, then recall it later and use it in a sentence.</div>
     </content>
   </entry>
 </feed>
