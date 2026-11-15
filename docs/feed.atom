@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-14T00:33:46Z</updated>
+  <updated>2026-11-15T00:38:05Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#56979836d03ffead2c42244e7508cc42bb3b147765cfff05f7357eb980659fc6</id>
+    <id>https://positivitybriefing.com/feed.atom#6480b943cf3b00546be900f421f7b342c5a04fa09f728dcae4c53dfc7e97b28f</id>
     <title>Useful</title>
-    <updated>2026-11-14T00:33:46Z</updated>
+    <updated>2026-11-15T00:38:05Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Keep potatoes in a cool, dark, well-ventilated place, but not beside onions: onions release moisture and gases that can encourage potatoes to sprout.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">To remember a new name, link it to a vivid feature or familiar person; making an association gives your memory another route back to it.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#0db871d2a7e9a19eab8a1daaf18df57e30c668cf9eb1f90cfe7ab680fdf43f1c</id>
+    <id>https://positivitybriefing.com/feed.atom#ecc06cecee6f897ada1c400df5cdba1636c1c4fb9e711cd64c3b9bcdc6aebc88</id>
     <title>Hopeful</title>
-    <updated>2026-11-14T00:33:46Z</updated>
+    <updated>2026-11-15T00:38:05Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through thousands of volunteer readers sending in quotations from books and newspapers, showing how shared curiosity can build a lasting record of language.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A humble yeast cell can turn sugar into carbon dioxide and alcohol; that reliable bit of biology helps bread rise and makes fermentation possible.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#5de505a88aca6871356da3cff36f82b6396cb4fc3c0be8b0af4bcf6c6bd4907b</id>
+    <id>https://positivitybriefing.com/feed.atom#1667dc907e18e5a6b7f51615dea29ff17334b494ec41a50b772fac43ef973a29</id>
     <title>Action</title>
-    <updated>2026-11-14T00:33:46Z</updated>
+    <updated>2026-11-15T00:38:05Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Pick an unfamiliar word from something you read today. Spend two minutes guessing its meaning from context, then recall it later and use it in a sentence.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In under five minutes, choose a familiar object and imagine how people made its equivalent 500 years ago; name the materials, tools and cleverest workaround.</div>
     </content>
   </entry>
 </feed>
