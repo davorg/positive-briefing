@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-15T00:38:05Z</updated>
+  <updated>2026-11-16T00:41:25Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#6480b943cf3b00546be900f421f7b342c5a04fa09f728dcae4c53dfc7e97b28f</id>
+    <id>https://positivitybriefing.com/feed.atom#613fdb738544aa77a0b07a466484ba77505c8d70160ebee42a1656e6a7da4008</id>
     <title>Useful</title>
-    <updated>2026-11-15T00:38:05Z</updated>
+    <updated>2026-11-16T00:41:25Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">To remember a new name, link it to a vivid feature or familiar person; making an association gives your memory another route back to it.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Salt melts ice by lowering its freezing point, which is why it helps clear icy paths; it works best when temperatures aren’t extremely low.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#ecc06cecee6f897ada1c400df5cdba1636c1c4fb9e711cd64c3b9bcdc6aebc88</id>
+    <id>https://positivitybriefing.com/feed.atom#017442240bebcfd03a7eb876cdf59d5de011852a0ca8a37f9835b79d7b5376b6</id>
     <title>Hopeful</title>
-    <updated>2026-11-15T00:38:05Z</updated>
+    <updated>2026-11-16T00:41:25Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A humble yeast cell can turn sugar into carbon dioxide and alcohol; that reliable bit of biology helps bread rise and makes fermentation possible.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The web’s open standards let people build tools that work across different devices and browsers, making collaboration possible without everyone using the same machine.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#1667dc907e18e5a6b7f51615dea29ff17334b494ec41a50b772fac43ef973a29</id>
+    <id>https://positivitybriefing.com/feed.atom#5c7170b58373ffc038ec6949bb0fcd12542d367af55a344efc83598ff2f27e54</id>
     <title>Action</title>
-    <updated>2026-11-15T00:38:05Z</updated>
+    <updated>2026-11-16T00:41:25Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In under five minutes, choose a familiar object and imagine how people made its equivalent 500 years ago; name the materials, tools and cleverest workaround.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Make a tiny sound-and-colour portrait: hum for ten seconds, then draw the shape or pattern that sound suggests using any pen or pencil nearby.</div>
     </content>
   </entry>
 </feed>
