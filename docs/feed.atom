@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-16T00:41:25Z</updated>
+  <updated>2026-11-17T00:36:08Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#613fdb738544aa77a0b07a466484ba77505c8d70160ebee42a1656e6a7da4008</id>
+    <id>https://positivitybriefing.com/feed.atom#3080b3ea3f4c010c75c7bb1f99bb5549d41888eda73afe0c6088ca02d6a3caef</id>
     <title>Useful</title>
-    <updated>2026-11-16T00:41:25Z</updated>
+    <updated>2026-11-17T00:36:08Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Salt melts ice by lowering its freezing point, which is why it helps clear icy paths; it works best when temperatures aren’t extremely low.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Many public libraries lend more than books: some offer tools, musical instruments or museum passes. Check your local catalogue before buying something you’ll use only occasionally.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#017442240bebcfd03a7eb876cdf59d5de011852a0ca8a37f9835b79d7b5376b6</id>
+    <id>https://positivitybriefing.com/feed.atom#9bb9404fba402f23b7efb611479c8fb40d48ec735c2786bc351395140e6c6238</id>
     <title>Hopeful</title>
-    <updated>2026-11-16T00:41:25Z</updated>
+    <updated>2026-11-17T00:36:08Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The web’s open standards let people build tools that work across different devices and browsers, making collaboration possible without everyone using the same machine.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Crows can recognise human faces and remember people who have treated them as threats, a striking example of how wildlife learns and adapts.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#5c7170b58373ffc038ec6949bb0fcd12542d367af55a344efc83598ff2f27e54</id>
+    <id>https://positivitybriefing.com/feed.atom#ae2016b21036adf6d9f756335a3abf063bb5840d3d2d5923a309e77fb1fa5379</id>
     <title>Action</title>
-    <updated>2026-11-16T00:41:25Z</updated>
+    <updated>2026-11-17T00:36:08Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Make a tiny sound-and-colour portrait: hum for ten seconds, then draw the shape or pattern that sound suggests using any pen or pencil nearby.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes clearing one small patch of a shared surface at home, returning stray items to their usual places and wiping away any crumbs.</div>
     </content>
   </entry>
 </feed>
