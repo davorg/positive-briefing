@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-19T00:35:59Z</updated>
+  <updated>2026-11-20T00:33:46Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#606b43b065bdd51ca079884c69ea1c43919187ea769a33845e7cce1ae1125624</id>
+    <id>https://positivitybriefing.com/feed.atom#05a18aab0a6f788cdeb9acd090dcb0d18acb7cb5c5cea3bc9dcfc79463e8066d</id>
     <title>Useful</title>
-    <updated>2026-11-19T00:35:59Z</updated>
+    <updated>2026-11-20T00:33:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">When a neighbour is new, offering a specific welcome—such as pointing out the nearest bus stop—makes it easier to accept help than a vague “let me know”.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A metal spoon feels colder than a wooden one at the same room temperature because it conducts heat away from your hand faster.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#93591821810b7432a3853edb71803e1b0083caeee6f7feca7ef973474c5fe2b7</id>
+    <id>https://positivitybriefing.com/feed.atom#1747356622ca8ed8b86b6a30dc70553a9cea85198646264898e681a1c6f19401</id>
     <title>Hopeful</title>
-    <updated>2026-11-19T00:35:59Z</updated>
+    <updated>2026-11-20T00:33:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Bumblebees can learn to pull a string to reach a food reward, and can learn the task by watching another bee—a striking example of social learning in insects.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tool libraries let people borrow drills and other equipment instead of buying their own; sharing practical resources makes repairs more accessible and reduces waste.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#4aea8996723b943e3139c01063bb07a7d0ed383e916e46c8a9cbb6cc67ca428b</id>
+    <id>https://positivitybriefing.com/feed.atom#beb4e400878315a4572f7857a5fe26784674934820f7a7a1d15de0a9754113af</id>
     <title>Action</title>
-    <updated>2026-11-19T00:35:59Z</updated>
+    <updated>2026-11-20T00:33:46Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In under five minutes, check your front door or shared entrance for a trip hazard, then move one loose shoe, bag or parcel safely out of the way.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Send a neighbour a short message asking how their week is going, then offer one specific time for a quick chat if they fancy it.</div>
     </content>
   </entry>
 </feed>
