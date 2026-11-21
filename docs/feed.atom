@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-20T00:33:46Z</updated>
+  <updated>2026-11-21T00:34:21Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#05a18aab0a6f788cdeb9acd090dcb0d18acb7cb5c5cea3bc9dcfc79463e8066d</id>
+    <id>https://positivitybriefing.com/feed.atom#4e5413fa5a1b11c10d859214bd9a845eab2dca23ecf25d536e1f04707633b8eb</id>
     <title>Useful</title>
-    <updated>2026-11-20T00:33:46Z</updated>
+    <updated>2026-11-21T00:34:21Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A metal spoon feels colder than a wooden one at the same room temperature because it conducts heat away from your hand faster.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">To remember a new name, link it to a distinctive feature or familiar image, then try recalling it a few minutes later; retrieval strengthens memory.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#1747356622ca8ed8b86b6a30dc70553a9cea85198646264898e681a1c6f19401</id>
+    <id>https://positivitybriefing.com/feed.atom#e41fa3da68d4d616bf58578fdbb386e8dd060c9c271443f53b9fc3532611f332</id>
     <title>Hopeful</title>
-    <updated>2026-11-20T00:33:46Z</updated>
+    <updated>2026-11-21T00:34:21Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Tool libraries let people borrow drills and other equipment instead of buying their own; sharing practical resources makes repairs more accessible and reduces waste.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">When a cut heals, nearby skin cells divide and move into the gap, while immune cells help clear debris—your body coordinates repair without conscious direction.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#beb4e400878315a4572f7857a5fe26784674934820f7a7a1d15de0a9754113af</id>
+    <id>https://positivitybriefing.com/feed.atom#632203edd1c018cac77c1596ff9cb1dff0c069f5eea00ffd0fd8160f6cc898f0</id>
     <title>Action</title>
-    <updated>2026-11-20T00:33:46Z</updated>
+    <updated>2026-11-21T00:34:21Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Send a neighbour a short message asking how their week is going, then offer one specific time for a quick chat if they fancy it.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">For three minutes, tap a rhythm on your knees and invent a matching tune with nonsense syllables; change the beat whenever the melody surprises you.</div>
     </content>
   </entry>
 </feed>
