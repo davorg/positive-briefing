@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-21T00:34:21Z</updated>
+  <updated>2026-11-22T00:37:40Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#4e5413fa5a1b11c10d859214bd9a845eab2dca23ecf25d536e1f04707633b8eb</id>
+    <id>https://positivitybriefing.com/feed.atom#cd2574c56195ff1dd452d12a0af41942981142e0f130af7ffcb28e1b802a8324</id>
     <title>Useful</title>
-    <updated>2026-11-21T00:34:21Z</updated>
+    <updated>2026-11-22T00:37:40Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">To remember a new name, link it to a distinctive feature or familiar image, then try recalling it a few minutes later; retrieval strengthens memory.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In medieval Europe, water-powered mills did more than grind grain: millwrights adapted cams to drive hammers, automating work such as fulling cloth.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#e41fa3da68d4d616bf58578fdbb386e8dd060c9c271443f53b9fc3532611f332</id>
+    <id>https://positivitybriefing.com/feed.atom#143a798f59944221e00e4541391f3b2da0e5b27ecb6549674bb8d7c84480f86b</id>
     <title>Hopeful</title>
-    <updated>2026-11-21T00:34:21Z</updated>
+    <updated>2026-11-22T00:37:40Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">When a cut heals, nearby skin cells divide and move into the gap, while immune cells help clear debris—your body coordinates repair without conscious direction.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A neighbourhood tool library turns occasional-use drills and ladders into shared resources; borrowing locally can make repairs easier without every household buying its own kit.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#632203edd1c018cac77c1596ff9cb1dff0c069f5eea00ffd0fd8160f6cc898f0</id>
+    <id>https://positivitybriefing.com/feed.atom#cb044e929db27d26f1129ed54d75841ddd64755e2a8daba980756f5d4846fb77</id>
     <title>Action</title>
-    <updated>2026-11-21T00:34:21Z</updated>
+    <updated>2026-11-22T00:37:40Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">For three minutes, tap a rhythm on your knees and invent a matching tune with nonsense syllables; change the beat whenever the melody surprises you.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend two minutes checking a mug’s handle for a hairline crack; if it’s sound, wipe away tea stains with a damp cloth and return it ready to use.</div>
     </content>
   </entry>
 </feed>
