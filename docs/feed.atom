@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-22T00:37:40Z</updated>
+  <updated>2026-11-23T00:38:17Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#cd2574c56195ff1dd452d12a0af41942981142e0f130af7ffcb28e1b802a8324</id>
+    <id>https://positivitybriefing.com/feed.atom#0e65e3a1a2431282fcd21a891fe09274492d3bc8fb2650d2251fc865e1096add</id>
     <title>Useful</title>
-    <updated>2026-11-22T00:37:40Z</updated>
+    <updated>2026-11-23T00:38:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In medieval Europe, water-powered mills did more than grind grain: millwrights adapted cams to drive hammers, automating work such as fulling cloth.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">When a neighbour’s parcel arrives, a quick note through the door can prevent a missed delivery and open a friendly exchange without assuming they’re home.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#143a798f59944221e00e4541391f3b2da0e5b27ecb6549674bb8d7c84480f86b</id>
+    <id>https://positivitybriefing.com/feed.atom#494b39bc39d3ff842e1fe35dd3446615b60cc5455e24351dc7f750dbe562d951</id>
     <title>Hopeful</title>
-    <updated>2026-11-22T00:37:40Z</updated>
+    <updated>2026-11-23T00:38:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A neighbourhood tool library turns occasional-use drills and ladders into shared resources; borrowing locally can make repairs easier without every household buying its own kit.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In 1930s Brazil, samba schools brought music, costume-making and neighbourhood collaboration together; their creativity grew into the spectacular annual Carnival parades seen today.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#cb044e929db27d26f1129ed54d75841ddd64755e2a8daba980756f5d4846fb77</id>
+    <id>https://positivitybriefing.com/feed.atom#41e08f18054aba4631064344feed7fe76eb693a8114d551b2027535f7e65e063</id>
     <title>Action</title>
-    <updated>2026-11-22T00:37:40Z</updated>
+    <updated>2026-11-23T00:38:17Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Spend two minutes checking a mug’s handle for a hairline crack; if it’s sound, wipe away tea stains with a damp cloth and return it ready to use.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Pick a book nearby, open to any page and read one sentence aloud; then retell it in your own words as if explaining it to a curious child.</div>
     </content>
   </entry>
 </feed>
