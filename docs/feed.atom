@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-24T00:32:51Z</updated>
+  <updated>2026-11-25T00:35:53Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#a06d4ce6f64a6bf4e48c83e751893f9873ba71a808a1a0e200487e832e8215ef</id>
+    <id>https://positivitybriefing.com/feed.atom#991378d21210c67d605adc67b286ffa27ad30a107f7c7e59759b916fad2214f3</id>
     <title>Useful</title>
-    <updated>2026-11-24T00:32:51Z</updated>
+    <updated>2026-11-25T00:35:53Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Inca engineers built terraces that slowed erosion and created level growing ground on steep slopes; their stonework also helped manage water across varied mountain climates.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">In a shared reading room, return books to the marked trolley rather than reshelving them yourself; staff can check their order and get them back into circulation sooner.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#5d62b3c7fb94691b8e6c62fecce038a5a5a517e1b4d9a7dd974a48f205525772</id>
+    <id>https://positivitybriefing.com/feed.atom#227d6f76a9d622fb74df7372d2cc0f264807daf3dbc560d86041d1f7a531ecc9</id>
     <title>Hopeful</title>
-    <updated>2026-11-24T00:32:51Z</updated>
+    <updated>2026-11-25T00:35:53Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">South Korea’s kimjang tradition brings neighbours together to make and share kimchi for winter; fermentation preserves vegetables, turning seasonal abundance into food that lasts.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through contributions from readers worldwide, including volunteers who sent in quotations; a vast reference work took shape through many people’s careful attention.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#31d9b2c8183aad7487f6cd914cf880bec7e980e8e7fd59e1486d874aed171175</id>
+    <id>https://positivitybriefing.com/feed.atom#8df09367886304e0687a5c38e23a6bef703ace60cfa43bcaa786e79ebff00d63</id>
     <title>Action</title>
-    <updated>2026-11-24T00:32:51Z</updated>
+    <updated>2026-11-25T00:35:53Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">For two minutes, watch a patch of ground or a tree from where you are; notice one wild creature, or signs such as tracks, chewed leaves or a spider’s web.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes using your browser’s find command (Ctrl+F or ⌘+F) to locate a word in a long webpage, then try another search term to compare results.</div>
     </content>
   </entry>
 </feed>
