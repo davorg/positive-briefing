@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-25T00:35:53Z</updated>
+  <updated>2026-11-26T00:35:15Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#991378d21210c67d605adc67b286ffa27ad30a107f7c7e59759b916fad2214f3</id>
+    <id>https://positivitybriefing.com/feed.atom#69e7add7accff5dd13465b08dd4df7bf6024bd5ea2bc9531d70ebcb3a1a2c01c</id>
     <title>Useful</title>
-    <updated>2026-11-25T00:35:53Z</updated>
+    <updated>2026-11-26T00:35:15Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">In a shared reading room, return books to the marked trolley rather than reshelving them yourself; staff can check their order and get them back into circulation sooner.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">When borrowing a tool from a neighbour, agree a return time as well as the loan; it makes sharing easier to plan and avoids awkward uncertainty.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#227d6f76a9d622fb74df7372d2cc0f264807daf3dbc560d86041d1f7a531ecc9</id>
+    <id>https://positivitybriefing.com/feed.atom#3115ee1060f254b2944d2587d215b55e5191dcda21c486863d66daafaac38826</id>
     <title>Hopeful</title>
-    <updated>2026-11-25T00:35:53Z</updated>
+    <updated>2026-11-26T00:35:15Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Oxford English Dictionary grew through contributions from readers worldwide, including volunteers who sent in quotations; a vast reference work took shape through many people’s careful attention.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">The Japanese art of origami turns one sheet into intricate forms through folds alone; its playful engineering shows how constraint can spark remarkable invention.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#8df09367886304e0687a5c38e23a6bef703ace60cfa43bcaa786e79ebff00d63</id>
+    <id>https://positivitybriefing.com/feed.atom#c4306463fe4616a1692a0bc4c443507923ded40df544907d7618d7c4e7601571</id>
     <title>Action</title>
-    <updated>2026-11-25T00:35:53Z</updated>
+    <updated>2026-11-26T00:35:15Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Spend three minutes using your browser’s find command (Ctrl+F or ⌘+F) to locate a word in a long webpage, then try another search term to compare results.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">For a quick sound experiment, hum while gently pinching your nose, then release it; notice how the nasal passage changes the resonance you hear.</div>
     </content>
   </entry>
 </feed>
