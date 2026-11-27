@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-26T00:35:15Z</updated>
+  <updated>2026-11-27T00:35:14Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#69e7add7accff5dd13465b08dd4df7bf6024bd5ea2bc9531d70ebcb3a1a2c01c</id>
+    <id>https://positivitybriefing.com/feed.atom#6989f722bdad68852d7f4aaf524a6a7c46809f0853789a161ed97111a45d8370</id>
     <title>Useful</title>
-    <updated>2026-11-26T00:35:15Z</updated>
+    <updated>2026-11-27T00:35:14Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">When borrowing a tool from a neighbour, agree a return time as well as the loan; it makes sharing easier to plan and avoids awkward uncertainty.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">A strip of masking tape makes a handy label for freezer containers: write the contents and date on it, then peel it off cleanly when you wash the tub.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#3115ee1060f254b2944d2587d215b55e5191dcda21c486863d66daafaac38826</id>
+    <id>https://positivitybriefing.com/feed.atom#1f42d489fd28bf97dc3724e2e729ba2c158b0cc1a183560861e70b6b1ac5cc61</id>
     <title>Hopeful</title>
-    <updated>2026-11-26T00:35:15Z</updated>
+    <updated>2026-11-27T00:35:14Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">The Japanese art of origami turns one sheet into intricate forms through folds alone; its playful engineering shows how constraint can spark remarkable invention.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Ugly fruit can still make excellent jam: cooking softens blemishes and brings out flavour, while preserving a surplus gives misshapen produce a useful second life.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#c4306463fe4616a1692a0bc4c443507923ded40df544907d7618d7c4e7601571</id>
+    <id>https://positivitybriefing.com/feed.atom#88c7c2cbd23a53afaf6bf2ae2681cb483bc2c4e0302ab383a3a1cde793622806</id>
     <title>Action</title>
-    <updated>2026-11-26T00:35:15Z</updated>
+    <updated>2026-11-27T00:35:14Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">For a quick sound experiment, hum while gently pinching your nose, then release it; notice how the nasal passage changes the resonance you hear.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">Choose a familiar tune and conduct it with one hand as though leading a tiny orchestra; make the final note absurdly grand, then bow to an imaginary audience.</div>
     </content>
   </entry>
 </feed>
