@@ -3,37 +3,37 @@
   <id>https://positivitybriefing.com/feed.atom</id>
   <title>Positivity Briefing</title>
   <subtitle>Something useful. Something hopeful. One small thing you can do today.</subtitle>
-  <updated>2026-11-27T00:35:14Z</updated>
+  <updated>2026-11-28T00:33:11Z</updated>
   <link rel="self" href="https://positivitybriefing.com/feed.atom" type="application/atom+xml"/>
   <link rel="alternate" href="https://positivitybriefing.com/" type="text/html"/>
   <author>
     <name>Dave Cross</name>
   </author>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#6989f722bdad68852d7f4aaf524a6a7c46809f0853789a161ed97111a45d8370</id>
+    <id>https://positivitybriefing.com/feed.atom#6c9429020c6cc80b4581ce4dc17318ec59f0998a08af3bdc11803627ce8a297e</id>
     <title>Useful</title>
-    <updated>2026-11-27T00:35:14Z</updated>
+    <updated>2026-11-28T00:33:11Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-1" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">A strip of masking tape makes a handy label for freezer containers: write the contents and date on it, then peel it off cleanly when you wash the tub.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">When a new neighbour arrives, a brief introduction plus one specific offer—such as collecting a parcel—makes it easier for them to accept help without guessing what’s available.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#1f42d489fd28bf97dc3724e2e729ba2c158b0cc1a183560861e70b6b1ac5cc61</id>
+    <id>https://positivitybriefing.com/feed.atom#50dec1db46defa0b04d93a76ab55c312ce42de5c6c4dfb28b3942587f79c4f51</id>
     <title>Hopeful</title>
-    <updated>2026-11-27T00:35:14Z</updated>
+    <updated>2026-11-28T00:33:11Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-2" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Ugly fruit can still make excellent jam: cooking softens blemishes and brings out flavour, while preserving a surplus gives misshapen produce a useful second life.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">During the 1940s, Britain’s wartime allotments turned spare ground into food-growing plots; neighbours shared tools and know-how, showing how overlooked patches can become productive together.</div>
     </content>
   </entry>
   <entry>
-    <id>https://positivitybriefing.com/feed.atom#88c7c2cbd23a53afaf6bf2ae2681cb483bc2c4e0302ab383a3a1cde793622806</id>
+    <id>https://positivitybriefing.com/feed.atom#e5d4539366a01e87914ca329605a0ce3e85a817a5b393f614819a06b67d69adb</id>
     <title>Action</title>
-    <updated>2026-11-27T00:35:14Z</updated>
+    <updated>2026-11-28T00:33:11Z</updated>
     <link rel="alternate" href="https://positivitybriefing.com/#item-3" type="text/html"/>
     <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">Choose a familiar tune and conduct it with one hand as though leading a tiny orchestra; make the final note absurdly grand, then bow to an imaginary audience.</div>
+      <div xmlns="http://www.w3.org/1999/xhtml">At home, check one frequently used drawer for a small snag—such as a loose handle or tangled cables—and spend three minutes tightening or untangling what you can by hand.</div>
     </content>
   </entry>
 </feed>
